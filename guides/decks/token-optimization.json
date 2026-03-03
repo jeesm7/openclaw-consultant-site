@@ -1,0 +1,10 @@
+[
+  {"type": "title", "title": "I Cut My OpenClaw Costs by 97%", "subtitle": "Here's How"},
+  {"type": "bullets", "title": "What We'll Cover", "bullets": ["Model selection & tradeoffs", "Heartbeat optimization", "System file audit", "15 copy-paste prompts"]},
+  {"type": "content", "title": "The Problem", "content": "If you're not careful, running OpenClaw on the API can cost $2,000+ per month. But it doesn't have to."},
+  {"type": "code", "title": "Quick Config Check", "language": "yaml", "code": "# openclaw.yml\nmodel: claude-sonnet-4-20250514\nheartbeat_interval: 300\nmax_tokens: 4096"},
+  {"type": "quote", "quote": "The best token is the one you never send.", "author": "Every frugal AI engineer"},
+  {"type": "bullets", "title": "The 5 Levers", "bullets": ["1. Pick the right model for each task", "2. Reduce heartbeat frequency", "3. Trim system files ruthlessly", "4. Cache repeated context", "5. Batch operations intelligently"]},
+  {"type": "content", "title": "Results", "content": "Monthly cost went from $2,100 to $63. Same productivity. Better focus. Your mileage may vary — but the principles are universal."},
+  {"type": "title", "title": "Start Optimizing Today", "subtitle": "openclawconsultant.com/guide"}
+]

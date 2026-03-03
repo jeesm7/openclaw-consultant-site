@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slides — OpenClaw Consultant</title>
+<meta name="description" content="Slide decks from OpenClaw Consultant">
+<link rel="icon" href="/favicon.ico">
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1RKJ2SNMH4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-1RKJ2SNMH4');</script>
+
+<!-- Clarity -->
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","va0mgvq1ql");</script>
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #000; --text: #fff; --muted: #888; --accent: #3b82f6;
+  --code-bg: #111; --grad-from: #3b82f6; --grad-to: #a855f7;
+}
+
+html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
+
+/* ── Deck listing ── */
+#listing { max-width: 700px; margin: 0 auto; padding: 60px 24px; }
+#listing h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 12px; }
+#listing p { color: var(--muted); font-size: 1.1rem; margin-bottom: 40px; }
+#listing a { display: block; padding: 20px 24px; margin-bottom: 12px; background: #111; border-radius: 12px; color: var(--text); text-decoration: none; font-size: 1.25rem; font-weight: 600; transition: background .2s; }
+#listing a:hover { background: #1a1a1a; }
+#listing a span { display: block; color: var(--muted); font-size: .9rem; font-weight: 400; margin-top: 4px; }
+
+/* ── Slide viewer ── */
+#viewer { display: none; height: 100vh; flex-direction: column; user-select: none; }
+
+/* Progress */
+#progress-track { height: 4px; background: #1a1a1a; }
+#progress-bar { height: 100%; background: linear-gradient(90deg, var(--grad-from), var(--grad-to)); transition: width .3s ease; }
+
+/* Slide area */
+#slide-area { flex: 1; display: flex; align-items: center; justify-content: center; padding: clamp(24px, 4vw, 64px); cursor: pointer; overflow: hidden; }
+#slide-content { max-width: 1100px; width: 100%; }
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideIn { from { opacity: 0; transform: translateX(-24px); } to { opacity: 1; transform: translateX(0); } }
+.anim-fade { animation: fadeIn .35s ease-out; }
+.anim-bullet { animation: slideIn .45s ease-out both; }
+
+/* Slide types */
+.slide-title { text-align: center; }
+.slide-title h1 { font-size: clamp(2.5rem, 7vw, 6rem); font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+.slide-title .subtitle { font-size: clamp(1.2rem, 3vw, 2.5rem); color: var(--muted); }
+
+.slide-bullets h2, .slide-content h2, .slide-code h2, .slide-split h2 {
+  font-size: clamp(1.8rem, 4.5vw, 3.5rem); font-weight: 700; margin-bottom: clamp(16px, 3vw, 48px);
+}
+.slide-bullets ul { list-style: none; }
+.slide-bullets li { font-size: clamp(1.1rem, 2.5vw, 2rem); display: flex; align-items: baseline; gap: 16px; margin-bottom: clamp(8px, 1.5vw, 24px); }
+.slide-bullets li::before { content: '→'; color: var(--accent); flex-shrink: 0; font-weight: 700; }
+
+.slide-content p { font-size: clamp(1.1rem, 2.5vw, 2rem); line-height: 1.6; color: #ddd; }
+
+.slide-code pre { background: var(--code-bg); padding: clamp(16px, 2vw, 32px); border-radius: 12px; overflow-x: auto; font-size: clamp(.8rem, 1.5vw, 1.25rem); line-height: 1.6; }
+.slide-code code { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; }
+
+/* Syntax highlighting (lightweight) */
+.tok-kw { color: #c084fc; } /* keywords */
+.tok-str { color: #34d399; } /* strings */
+.tok-cm { color: #666; } /* comments */
+.tok-num { color: #f59e0b; } /* numbers */
+
+.slide-quote { text-align: center; padding: 0 clamp(8px, 4vw, 60px); }
+.slide-quote blockquote { font-size: clamp(1.5rem, 3.5vw, 3rem); font-style: italic; line-height: 1.5; margin-bottom: 20px; }
+.slide-quote .author { color: var(--muted); font-size: clamp(1rem, 2vw, 1.5rem); }
+
+.slide-image { text-align: center; }
+.slide-image img { max-width: 100%; max-height: 65vh; border-radius: 12px; }
+
+.slide-split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 3vw, 48px); align-items: center; }
+@media (max-width: 700px) { .slide-split { grid-template-columns: 1fr; } }
+
+/* Footer */
+#footer { padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: .9rem; }
+#footer button { background: none; border: none; color: var(--muted); font-size: 1.1rem; cursor: pointer; padding: 4px 10px; border-radius: 6px; transition: color .2s; }
+#footer button:hover { color: var(--text); }
+#footer button:disabled { opacity: .3; cursor: default; }
+#nav-hint { display: none; font-size: .75rem; }
+@media (min-width: 768px) { #nav-hint { display: inline; } }
+</style>
+</head>
+<body>
+
+<!-- Deck listing (shown when no ?deck param) -->
+<div id="listing"></div>
+
+<!-- Slide viewer -->
+<div id="viewer">
+  <div id="progress-track"><div id="progress-bar"></div></div>
+  <div id="slide-area" onclick="next()"><div id="slide-content" class="anim-fade"></div></div>
+  <div id="footer">
+    <span id="counter">1 / 1</span>
+    <div>
+      <span id="nav-hint">← → navigate | F fullscreen</span>
+      <button id="btn-prev" onclick="event.stopPropagation();prev()">←</button>
+      <button id="btn-next" onclick="event.stopPropagation();next()">→</button>
+      <button onclick="event.stopPropagation();toggleFs()">⛶</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const DECKS_DIR = '/guides/decks/';
+
+// Known decks for the listing page
+const KNOWN_DECKS = [
+  { slug: 'token-optimization', title: 'I Cut My OpenClaw Costs by 97%', desc: 'Model selection, heartbeat tuning, and 15 copy-paste prompts' }
+];
+
+let slides = [], current = 0;
+
+// ── Init ──
+(function init() {
+  const params = new URLSearchParams(location.search);
+  const deck = params.get('deck');
+  if (!deck) return showListing();
+  loadDeck(deck);
+})();
+
+function showListing() {
+  const el = document.getElementById('listing');
+  let html = '<h1>Slide Decks</h1><p>Presentations from OpenClaw Consultant</p>';
+  KNOWN_DECKS.forEach(d => {
+    html += `<a href="?deck=${d.slug}">${d.title}<span>${d.desc}</span></a>`;
+  });
+  el.innerHTML = html;
+}
+
+async function loadDeck(slug) {
+  try {
+    const res = await fetch(DECKS_DIR + slug + '.json');
+    if (!res.ok) throw new Error('Not found');
+    slides = await res.json();
+    document.getElementById('listing').style.display = 'none';
+    document.getElementById('viewer').style.display = 'flex';
+    render();
+  } catch (e) {
+    document.getElementById('listing').innerHTML = '<h1 style="padding:60px 24px">Deck not found.</h1><p style="padding:0 24px"><a href="/guides" style="color:var(--accent)">← Back to decks</a></p>';
+  }
+}
+
+function render() {
+  const s = slides[current];
+  const el = document.getElementById('slide-content');
+  el.className = 'anim-fade';
+  // Force re-trigger animation
+  void el.offsetWidth;
+  el.className = 'anim-fade';
+
+  let html = '';
+  switch (s.type) {
+    case 'title':
+      html = `<div class="slide-title"><h1>${esc(s.title||'')}</h1>${s.subtitle?`<div class="subtitle">${esc(s.subtitle)}</div>`:''}</div>`;
+      break;
+    case 'bullets':
+      html = `<div class="slide-bullets"><h2>${esc(s.title||'')}</h2><ul>${(s.bullets||[]).map((b,i)=>`<li class="anim-bullet" style="animation-delay:${i*.1}s">${esc(b)}</li>`).join('')}</ul></div>`;
+      break;
+    case 'content':
+      html = `<div class="slide-content"><h2>${esc(s.title||'')}</h2><p>${esc(s.content||'')}</p></div>`;
+      break;
+    case 'code':
+      html = `<div class="slide-code"><h2>${esc(s.title||'')}</h2><pre><code>${highlight(s.code||'', s.language)}</code></pre></div>`;
+      break;
+    case 'quote':
+      html = `<div class="slide-quote"><blockquote>"${esc(s.quote||'')}"</blockquote>${s.author?`<div class="author">— ${esc(s.author)}</div>`:''}</div>`;
+      break;
+    case 'image':
+      html = `<div class="slide-image">${s.title?`<h2>${esc(s.title)}</h2>`:''}${s.image?`<img src="${esc(s.image)}" alt="${esc(s.title||'')}">`:''}</div>`;
+      break;
+    case 'split':
+      html = `<div class="slide-split"><div>${s.title?`<h2>${esc(s.title)}</h2>`:''}${s.content?`<p>${esc(s.content)}</p>`:''}</div><div>${s.image?`<img src="${esc(s.image)}" style="max-width:100%;border-radius:12px">`:s.code?`<pre style="background:var(--code-bg);padding:24px;border-radius:12px"><code>${highlight(s.code||'',s.language)}</code></pre>`:''}</div></div>`;
+      break;
+  }
+  el.innerHTML = html;
+
+  // Update UI
+  document.getElementById('progress-bar').style.width = ((current+1)/slides.length*100)+'%';
+  document.getElementById('counter').textContent = (current+1)+' / '+slides.length;
+  document.getElementById('btn-prev').disabled = current===0;
+  document.getElementById('btn-next').disabled = current===slides.length-1;
+}
+
+function next() { if (current < slides.length-1) { current++; render(); } }
+function prev() { if (current > 0) { current--; render(); } }
+function toggleFs() {
+  if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+  else document.exitFullscreen();
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key===' ') { e.preventDefault(); next(); }
+  else if (e.key==='ArrowLeft') { e.preventDefault(); prev(); }
+  else if (e.key==='f'||e.key==='F') { toggleFs(); }
+});
+
+function esc(s) { const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+
+// Lightweight syntax highlighting
+function highlight(code, lang) {
+  let h = esc(code);
+  // Comments
+  h = h.replace(/(#[^\n]*)/g, '<span class="tok-cm">$1</span>');
+  h = h.replace(/(\/\/[^\n]*)/g, '<span class="tok-cm">$1</span>');
+  // Strings
+  h = h.replace(/(&quot;[^&]*?&quot;|'[^']*?'|`[^`]*?`)/g, '<span class="tok-str">$1</span>');
+  // Numbers
+  h = h.replace(/\b(\d+\.?\d*)\b/g, '<span class="tok-num">$1</span>');
+  // Keywords
+  const kw = 'const|let|var|function|return|if|else|for|while|import|export|from|class|true|false|null|undefined|async|await';
+  h = h.replace(new RegExp('\\b('+kw+')\\b', 'g'), '<span class="tok-kw">$1</span>');
+  return h;
+}
+</script>
+</body>
+</html>

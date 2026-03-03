@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RKJ2SNMH4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1RKJ2SNMH4');
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "va0mgvq1ql");
+    </script>
+    <title>The OpenClaw Book: The Complete Guide to Mastering Your AI Agent</title>
+    <meta name="description" content="Free 10-chapter OpenClaw guide: learn to set up, configure, and master your AI agent. Covers architecture, skills, prompting, proactive automation, sub-agents, SEO, and security hardening — with copy-paste prompts and real-world examples.">
+    
+    <link rel="canonical" href="https://openclawconsultant.com/openclaw-book">
+    
+    <meta property="og:title" content="The OpenClaw Book: The Complete Guide to Mastering Your AI Agent">
+    <meta property="og:description" content="Free 10-chapter OpenClaw guide with copy-paste prompts. Learn setup, skills, proactive automation, sub-agents, SEO, and security hardening.">
+    <meta property="og:url" content="https://openclawconsultant.com/openclaw-book">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="OpenClaw Consulting">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The OpenClaw Book: The Complete Guide to Mastering Your AI Agent">
+    <meta name="twitter:description" content="Free 10-chapter OpenClaw guide with copy-paste prompts. Learn setup, skills, proactive automation, sub-agents, SEO, and security hardening.">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+    <link rel="apple-touch-icon" href="/favicon-192.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "The OpenClaw Book",
+        "description": "The definitive guide to mastering your OpenClaw AI agent. Covers architecture, setup, skills, prompting, planning, optimization, proactive AI, sub-agents, real-world use cases, and security hardening.",
+        "author": { "@type": "Person", "name": "Jess Stetson Mason" },
+        "publisher": { "@type": "Organization", "name": "OpenClaw Consulting" },
+        "url": "https://openclawconsultant.com/openclaw-book",
+        "inLanguage": "en",
+        "numberOfPages": "10",
+        "genre": "Technology",
+        "about": { "@type": "Thing", "name": "OpenClaw AI Assistant Platform" }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "The OpenClaw Book: The Complete Guide to Mastering Your AI Agent",
+        "author": { "@type": "Person", "name": "Jess Stetson Mason" },
+        "publisher": { "@type": "Organization", "name": "OpenClaw Consulting", "url": "https://openclawconsultant.com" },
+        "datePublished": "2025-01-01",
+        "dateModified": "2026-02-14",
+        "url": "https://openclawconsultant.com/openclaw-book",
+        "mainEntityOfPage": "https://openclawconsultant.com/openclaw-book",
+        "description": "Free 10-chapter OpenClaw guide covering setup, skills, prompting, proactive automation, sub-agents, SEO, and security hardening."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://openclawconsultant.com/" },
+            { "@type": "ListItem", "position": 2, "name": "The OpenClaw Book", "item": "https://openclawconsultant.com/openclaw-book" }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is OpenClaw?",
+                "acceptedAnswer": { "@type": "Answer", "text": "OpenClaw is an autonomous AI agent platform that runs on hardware you control. It connects to messaging platforms like Telegram and WhatsApp, executes tool calls, manages files, browses the web, and automates workflows — all while keeping your data on your own server." }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does OpenClaw cost?",
+                "acceptedAnswer": { "@type": "Answer", "text": "OpenClaw itself is free and open source. You pay for the AI model (Claude subscription from $20-$200/month) and optionally a VPS server (~$15/month). No platform fees." }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need DevOps experience to set up OpenClaw?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. OpenClaw uses an 'AI installs AI' setup process where Claude Code SSHs into your server and configures everything automatically. The entire setup takes about 15 minutes with zero Linux knowledge required." }
+            },
+            {
+                "@type": "Question",
+                "name": "What can OpenClaw automate?",
+                "acceptedAnswer": { "@type": "Answer", "text": "OpenClaw can automate email management, calendar scheduling, lead monitoring, content creation, SEO audits, website deployment, CRM tracking, research, and much more. It runs 24/7 with proactive heartbeats and cron jobs." }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg: #0e0e11;
+            --bg-elevated: #16161b;
+            --bg-card: #1a1a21;
+            --text: #f0ede8;
+            --text-secondary: #9b978f;
+            --accent: #c9a96e;
+            --accent-dim: rgba(201, 169, 110, 0.12);
+            --accent-mid: rgba(201, 169, 110, 0.25);
+            --border: #2a2a30;
+            --serif: 'Cormorant Garamond', Georgia, serif;
+            --sans: 'DM Sans', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', 'Fira Code', monospace;
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 8rem;
+            --max-w: 760px;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        /* Nav */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.5rem 0;
+            transition: all 0.4s ease;
+        }
+        nav.scrolled {
+            background: rgba(14, 14, 17, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+        .nav-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-family: var(--serif);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--text);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+        .nav-logo span { color: var(--accent); }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .nav-link {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover { color: var(--accent); }
+        .nav-link.active { color: var(--accent); }
+        .nav-cta {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.6rem 1.25rem;
+            border: 1px solid var(--accent-mid);
+            transition: all 0.3s ease;
+        }
+        .nav-cta:hover {
+            background: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+        }
+
+        /* Article layout */
+        .article-wrap {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        /* Hero */
+        .guide-hero {
+            padding: 10rem 0 var(--space-lg);
+            position: relative;
+        }
+        .guide-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border), transparent);
+        }
+        .guide-hero .label {
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: var(--space-sm);
+        }
+        .guide-hero h1 {
+            font-family: var(--serif);
+            font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+            font-weight: 400;
+            line-height: 1.12;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            margin-bottom: var(--space-md);
+        }
+        .guide-hero h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+        .guide-hero .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.75;
+        }
+
+        /* TOC */
+        .toc {
+            padding: var(--space-lg) 0;
+            position: relative;
+        }
+        .toc::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border), transparent);
+        }
+        .toc-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: var(--space-md);
+        }
+        .toc-card h2 {
+            font-family: var(--serif);
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: var(--space-sm);
+            color: var(--text);
+        }
+        .toc-list {
+            list-style: none;
+            display: grid;
+            gap: 0.6rem;
+        }
+        .toc-list li a {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            line-height: 1.5;
+        }
+        .toc-list li a:hover { color: var(--accent); }
+        .toc-num {
+            font-family: var(--serif);
+            font-size: 1rem;
+            color: var(--accent);
+            flex-shrink: 0;
+            width: 1.5rem;
+        }
+
+        /* Chapters */
+        .chapter {
+            padding: var(--space-lg) 0;
+            position: relative;
+            /* content-visibility removed — caused mobile rendering bugs */
+        }
+        .chapter::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border), transparent);
+        }
+        .chapter-label {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+        }
+        .chapter h2 {
+            font-family: var(--serif);
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 400;
+            line-height: 1.15;
+            color: var(--text);
+            margin-bottom: var(--space-md);
+        }
+        .chapter h3 {
+            font-family: var(--serif);
+            font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+            font-weight: 500;
+            line-height: 1.3;
+            color: var(--text);
+            margin-top: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+        .chapter h4 {
+            font-family: var(--sans);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .chapter p {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-sm);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .chapter strong {
+            color: var(--text);
+            font-weight: 500;
+        }
+        .chapter a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-mid);
+            transition: border-color 0.3s ease;
+        }
+        .chapter a:hover { border-color: var(--accent); }
+        .chapter ul, .chapter ol {
+            margin-bottom: var(--space-sm);
+            padding-left: 0;
+            list-style: none;
+        }
+        .chapter ul li, .chapter ol li {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            line-height: 1.7;
+        }
+        .chapter ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 6px;
+            height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+        .chapter ol { counter-reset: item; }
+        .chapter ol li { counter-increment: item; }
+        .chapter ol li::before {
+            content: counter(item) ".";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-family: var(--serif);
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: var(--space-sm);
+            overflow-x: auto;
+            position: relative;
+        }
+        .code-block code {
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            color: var(--text);
+            line-height: 1.7;
+            white-space: pre;
+            display: block;
+        }
+        .code-label {
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-family: var(--sans);
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            padding: 0.35rem 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .copy-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Callout boxes */
+        .callout {
+            background: var(--bg-card);
+            border-left: 3px solid var(--accent);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: var(--space-sm);
+        }
+        .callout p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .callout p:last-child { margin-bottom: 0; }
+        .callout-warning {
+            border-left-color: #e57373;
+        }
+        .callout-warning strong { color: #e57373; }
+
+        /* Combined CTA banner */
+        .cta-duo {
+            display: flex;
+            gap: 0;
+            margin: var(--space-md) 0;
+            border: 1px solid var(--accent-mid);
+            background: var(--bg-card);
+        }
+        .cta-duo__side {
+            flex: 1;
+            padding: var(--space-md);
+            text-align: center;
+        }
+        .cta-duo__side + .cta-duo__side {
+            border-left: 1px solid var(--accent-mid);
+        }
+        .cta-duo__side h3 {
+            font-family: var(--serif);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--text);
+            margin: 0 0 0.75rem;
+        }
+        .cta-duo__side p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            max-width: 400px;
+            margin: 0 auto 1.25rem;
+        }
+        @media (max-width: 768px) {
+            .cta-duo { flex-direction: column; }
+            .cta-duo__side + .cta-duo__side {
+                border-left: none;
+                border-top: 1px solid var(--accent-mid);
+            }
+        }
+
+        /* CTA sections */
+        .guide-cta {
+            background: var(--bg-card);
+            border: 1px solid var(--accent-mid);
+            padding: var(--space-md);
+            text-align: center;
+            margin: var(--space-md) 0;
+        }
+        .guide-cta h3 {
+            font-family: var(--serif);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+            margin-top: 0;
+        }
+        .guide-cta p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            max-width: 500px;
+            margin: 0 auto 1.25rem;
+        }
+        .btn, .chapter a.btn, a.btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: var(--sans);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #000000 !important;
+            background: var(--accent);
+            padding: 1rem 2.25rem;
+            border: none;
+            border-bottom: none !important;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .btn:hover {
+            background: #d4b577;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 30px rgba(201, 169, 110, 0.2);
+        }
+        .btn .arrow { transition: transform 0.3s ease; }
+        .btn:hover .arrow { transform: translateX(4px); }
+
+        /* File tree */
+        .file-tree {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: var(--space-sm);
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .file-tree .highlight { color: var(--accent); }
+
+        /* Comparison table */
+        .compare-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: var(--border);
+            margin-bottom: var(--space-sm);
+        }
+        .compare-col {
+            background: var(--bg);
+            padding: 1.5rem;
+        }
+        .compare-col h4 {
+            font-family: var(--serif);
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            margin-top: 0;
+        }
+        .compare-col.bad h4 { color: #e57373; }
+        .compare-col.good h4 { color: var(--accent); }
+
+        /* Progress dots */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            background: var(--accent);
+            z-index: 200;
+            transition: width 0.1s linear;
+        }
+
+        /* Back to top */
+        .back-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 44px;
+            height: 44px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 50;
+            text-decoration: none;
+        }
+        .back-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .back-top:hover {
+            border-color: var(--accent);
+            background: var(--accent-dim);
+        }
+
+        /* Footer */
+        footer {
+            padding: var(--space-md) 0;
+            border-top: 1px solid var(--border);
+        }
+        footer .footer-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+        footer a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s;
+        }
+        footer a:hover { color: var(--accent); }
+
+        /* Reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .guide-hero { padding-top: 7rem; }
+            .nav-links { gap: 1rem; }
+            .nav-link { display: none; }
+            .compare-grid { grid-template-columns: 1fr; }
+            footer .footer-wrap { flex-direction: column; gap: 0.5rem; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            body { font-size: 16px; }
+            .article-wrap { padding: 0 1.25rem; }
+            .code-block { padding: 1rem; }
+            .code-block code { font-size: 0.78rem; }
+            .guide-cta { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Reading progress bar -->
+    <div class="reading-progress" id="progress"></div>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <div class="nav-wrap">
+            <a href="/" class="nav-logo"><img src="/logo.png" alt="OpenClaw" style="height:32px;width:32px;border-radius:6px;vertical-align:middle;margin-right:0.5rem;object-fit:cover;">Open<span>Claw</span></a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/openclaw-book" class="nav-link active">The Book</a>
+                <a href="/guide" class="nav-link">Setup Guide</a>
+                <a href="https://cal.com/jess-mason/openclaw-consultation" class="nav-cta">Book a call</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="guide-hero">
+        <div class="article-wrap">
+            <p class="label">The Definitive Guide</p>
+            <h1>The OpenClaw Book: Everything You Need to <em>Master</em> Your AI Agent</h1>
+            <p class="subtitle">Ten chapters covering architecture, setup, skills, prompting, planning, optimization, proactive automation, sub-agents, real-world use cases, and security. Whether you just set up your first instance or you have been running one for months, this openclaw book is the complete reference for getting the most out of the platform.</p>
+            <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+                <a href="#ch1" class="btn">Start Reading <span class="arrow">&darr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section style="padding:var(--space-lg) 0;position:relative;">
+        <div class="article-wrap" style="text-align:center;">
+            <h2 style="font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.4rem);font-weight:400;margin-bottom:0.75rem;color:var(--text);">Get my weekly breakdown of what's actually working with AI agents</h2>
+            <p style="color:var(--text-secondary);font-size:1.05rem;margin-bottom:var(--space-md);">Real tactics, real results. No fluff, no spam. Unsubscribe anytime.</p>
+            <form id="newsletter-form-book" style="display:flex;gap:0.75rem;max-width:480px;margin:0 auto;" onsubmit="return submitNewsletter(event,'book')">
+                <input type="email" name="email" required placeholder="your@email.com" style="flex:1;padding:1rem 1.25rem;background:var(--bg-card);border:1px solid var(--border);color:var(--text);font-family:var(--sans);font-size:0.95rem;outline:none;transition:border-color 0.3s;" onfocus="this.style.borderColor='var(--accent-mid)'" onblur="this.style.borderColor='var(--border)'">
+                <button type="submit" class="btn" style="white-space:nowrap;padding:1rem 1.75rem;">I'm in</button>
+            </form>
+            <p id="newsletter-msg-book" style="margin-top:1rem;font-size:0.9rem;opacity:0;transition:opacity 0.4s;"></p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="toc">
+        <div class="article-wrap">
+            <div class="toc-card reveal">
+                <h2>Table of Contents</h2>
+                <ol class="toc-list">
+                    <li><a href="#ch1"><span class="toc-num">1</span> What Is OpenClaw</a></li>
+                    <li><a href="#ch2"><span class="toc-num">2</span> Setting Up Your OpenClaw</a></li>
+                    <li><a href="#ch3"><span class="toc-num">3</span> Skills: How Your Agent Gets Smarter</a></li>
+                    <li><a href="#ch4"><span class="toc-num">4</span> How to Prompt: Think Before You Execute</a></li>
+                    <li><a href="#ch5"><span class="toc-num">5</span> Planning: Most Work Is Done Before Building</a></li>
+                    <li><a href="#ch6"><span class="toc-num">6</span> Optimization: Make It 10x Smarter</a></li>
+                    <li><a href="#ch7"><span class="toc-num">7</span> Proactive AI: Your 24/7 Employee</a></li>
+                    <li><a href="#ch8"><span class="toc-num">8</span> Sub-Agents: Build Your AI Team</a></li>
+                    <li><a href="#ch9"><span class="toc-num">9</span> Real-World Use Cases</a></li>
+                    <li><a href="#ch10"><span class="toc-num">10</span> Security: Lock It Down</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA banner after TOC -->
+    <div class="article-wrap">
+        <div class="cta-duo reveal">
+            <div class="cta-duo__side">
+                <h3>Browse the Lessons</h3>
+                <p>Connect with other OpenClaw users, get help, share what you've built.</p>
+                <a href="https://www.skool.com/openclaw-mastery" class="btn">BROWSE THE LESSONS <span class="arrow">&rarr;</span></a>
+            </div>
+            <div class="cta-duo__side">
+                <h3>Book a Strategy Call</h3>
+                <p>Want this set up for your business? Let's talk about what's possible.</p>
+                <a href="https://cal.com/jess-mason/openclaw-consultation" class="btn">BOOK A STRATEGY CALL <span class="arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 1 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch1">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 1</p>
+                <h2>What Is OpenClaw</h2>
+
+                <h3>1.1 The Architecture</h3>
+                <p>OpenClaw is not a chatbot. It is an autonomous AI agent platform that runs on hardware you control. Understanding the architecture is the first step to using it well, and the core loop is surprisingly simple once you see it clearly.</p>
+                <p>Every interaction follows the same cycle: you send a message through a channel like Telegram, WhatsApp, Discord, or any supported platform. That message hits the Gateway, which is a process running 24/7 on your server. The Gateway takes your message and sends it to a large language model along with your agent's full context: its personality, its knowledge about you, its memories, and its operating instructions. The model processes everything and responds, sometimes with a direct reply and sometimes with a tool call.</p>
+                <p>Tool calls are where things get interesting. If the model decides it needs to take action, it can read or write files, execute shell commands, browse the web, send messages on your behalf, interact with APIs, or schedule future tasks. After executing a tool call, the result goes back to the model, which decides what to do next. This loop can repeat as many times as needed. The model might read a file, search the web, write code, test it, fix a bug, and then respond to you, all in a single interaction.</p>
+                <p>To put this in practical terms: you message your agent "draft an email to the client about the project delay." The model reads your recent conversation history and your relationship with that client from memory files, checks the project build log to understand the actual status, drafts an email in your voice, and sends you the draft for approval. If you say "send it," the agent opens your Gmail integration and sends the email directly. One message from you triggered reading, writing, reasoning, and execution. That is the core loop in action.</p>
+                <p>The Gateway itself is lightweight. It does not do the thinking. It routes messages between you and the LLM, manages tool execution, handles scheduling, and maintains the connection to your messaging platforms. Think of it as the nervous system connecting your brain (the LLM) to your hands (the tools). It runs 24/7 with minimal resource usage, typically consuming less than 500MB of RAM even under heavy load.</p>
+                <p>The key insight is that OpenClaw is not running on someone else's cloud. The Gateway runs on YOUR server, whether that is a VPS you rent for $15 a month or a Mac Mini sitting on your desk. Your data stays on your machine. Your conversations, your files, your memories, your business data. None of it passes through a third-party service beyond the LLM API call itself. This matters for privacy, for compliance, and for the simple peace of mind that comes from knowing exactly where your data lives.</p>
+
+                <h3>1.2 The Brain Files</h3>
+                <p>Every OpenClaw agent has a set of files that define who it is, what it knows, and how it operates. Think of these as the agent's brain. Change the files, change the AI. This is not a metaphor. These files load into every conversation, shaping every response, every decision, every action the agent takes. Understanding them is understanding your agent.</p>
+
+                <h4>SOUL.md</h4>
+                <p>This is your agent's personality. Its tone, its communication style, its boundaries, its values. If you want your agent to be formal and professional, you write that into SOUL.md. If you want it to be casual and funny, you write that instead. The SOUL file shapes every single response the agent produces.</p>
+                <p>Some users create agents that are direct and no-nonsense. Others build agents with distinctive personalities, complete with sarcasm, humor, or a particular communication cadence that feels like a colleague rather than a tool. One user configured an agent with a "relentlessly honest" personality that pushes back on bad ideas instead of agreeing with everything. Another built an agent with a warm, encouraging tone designed for client-facing interactions. The choice is yours, and you can change it at any time. The agent becomes whatever you write in SOUL.md, immediately.</p>
+
+                <h4>USER.md</h4>
+                <p>This file is about you. Your name, your business, your goals, your preferences. The more context your agent has about who you are and what you are trying to accomplish, the better its output becomes. A good USER.md includes your role, the kind of work you do, your communication preferences, time zone, and any context that helps the agent make better decisions without asking you for clarification every time.</p>
+
+                <h4>MEMORY.md</h4>
+                <p>Long-term memory that persists across sessions. Your agent wakes up fresh every time, with no inherent memory of previous conversations, but MEMORY.md gives it continuity. Decisions you have made, lessons learned, ongoing projects, important context, client details, and anything else worth remembering long-term.</p>
+                <p>Think of it like a human's long-term memory distilled into a file. The agent reads this every session and uses it to maintain context about your relationship, your business, and your preferences over time. Without MEMORY.md, every conversation would start from zero. With it, your agent remembers that you prefer bullet points over paragraphs, that your biggest client is named Sarah, that you tried a particular marketing strategy last month and it did not work, and that you have a board meeting every second Tuesday.</p>
+                <p>The common mistake with MEMORY.md is letting it become a diary. More on that in Chapter 6, but the key point here is that MEMORY.md should be curated, not chronological. It is a reference document, not a journal.</p>
+
+                <h4>AGENTS.md</h4>
+                <p>Operating instructions. This is the rulebook for how the agent behaves: how it handles files, when it should ask permission versus act independently, how it manages memory, what it does during idle time, and how it operates in group chats. AGENTS.md is the single most important file for shaping your agent's behavior beyond its personality.</p>
+                <p>A well-written AGENTS.md covers safety boundaries (what the agent should never do without asking), file conventions (where to save things, how to name files), communication rules (how to behave in group chats versus direct messages), memory management (when to write to daily files versus MEMORY.md), and proactive behavior rules (what to do during heartbeats, when to reach out). Most users start with a template and refine it over weeks as they discover what their agent needs to know.</p>
+
+                <h4>TOOLS.md</h4>
+                <p>Local configuration notes. Account names, IP addresses, camera names, SSH hosts, voice preferences. This is NOT where instructions go. It is a quick-reference sheet of environment-specific details that help the agent do its job without asking you for information it should already have.</p>
+
+                <h4>HEARTBEAT.md</h4>
+                <p>A periodic checklist. When the agent wakes up on its heartbeat cycle (more on this in Chapter 7), it reads HEARTBEAT.md and follows the checklist. Check email. Review calendar. Monitor leads. Whatever you need it to do proactively, you put it here.</p>
+
+                <h3>1.3 Why This Is Different</h3>
+                <p>The distinction between OpenClaw and every other AI tool on the market comes down to three things: ownership, memory, and accumulation.</p>
+                <p><strong>Ownership.</strong> Your agent runs on your hardware. No vendor lock-in. No monthly SaaS fee for the platform itself (you pay for the LLM API, not the agent framework). No dependency on a company staying in business or maintaining servers. If the OpenClaw project disappeared tomorrow, your agent would keep running on your machine with your data intact. Compare that to any SaaS AI tool where the company shutting down means losing everything. Ownership also means control. You decide what your agent can access, what it stores, what it deletes, and who can talk to it. Nobody else makes those decisions for you.</p>
+                <p><strong>Memory.</strong> ChatGPT forgets you between sessions. Claude.ai has limited memory. OpenClaw remembers everything you tell it to remember, because memory is just files on disk. There is no context window limit for stored knowledge. The agent can maintain detailed records of every project, every decision, every client interaction, indefinitely. Three months of client notes, project plans, meeting summaries, and business intelligence, all accessible instantly. The agent does not just remember facts. It remembers your preferences, your patterns, your communication style, and the entire history of your working relationship.</p>
+                <p><strong>Accumulation.</strong> This is the most powerful concept and the one that separates OpenClaw from everything else. Every time your agent builds something useful, it can save that work as a skill. Skills are reusable instruction sets that make the agent better at specific tasks. Over time, your agent accumulates capabilities. It starts as a general-purpose assistant and gradually becomes a specialist in everything your business needs.</p>
+                <p>Consider the trajectory: in week one, your agent writes decent emails. By week four, it has a refined email skill that matches your tone perfectly. By month three, it has skills for email, content writing, SEO audits, client onboarding, proposal drafting, and lead research, all customized to your specific standards through repeated feedback. Six months in, your agent has dozens of refined skills, deep memory of your preferences, and the ability to handle complex workflows that would take a new user weeks to set up. That accumulated capability compounds daily. It is an asset that grows more valuable with every interaction, and it is something no other AI tool offers.</p>
+                <p>This is not a chatbot you rent. It is infrastructure you own. And it gets better every single day you use it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 2 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch2">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 2</p>
+                <h2>Setting Up Your OpenClaw</h2>
+
+                <h3>2.1 Choose Your Hardware</h3>
+                <p>You have two main options for running OpenClaw, and the right choice depends on your situation, your budget, and how much infrastructure management you want to deal with.</p>
+                <p><strong>VPS (Virtual Private Server)</strong> is the recommended path for most users. A Hetzner CX43 gives you 8 vCPU cores, 16GB of RAM, and 160GB of storage for roughly $15 per month. That is more than enough to run OpenClaw with multiple sub-agents, browser automation, SearXNG for web search, and all the tools you will ever need. The VPS is always on, always connected, and accessible from anywhere in the world. No worrying about your home internet going down, your machine going to sleep, or power outages killing your agent mid-task.</p>
+                <p>Hetzner is the most popular choice in the community because of the price-to-performance ratio, but DigitalOcean, Linode, Vultr, and AWS Lightsail all work. The key specs to look for: at least 4 vCPUs, at least 8GB RAM (16GB preferred), and 80GB+ storage. Anything meeting those specs will run OpenClaw comfortably.</p>
+                <p><strong>Mac Mini</strong> is the alternative for users who want everything local. No monthly cost beyond electricity. Better for situations where data sensitivity is extreme, where regulatory compliance requires on-premise hosting, or where you want the agent to interact with macOS-specific tools like Xcode, Shortcuts, or native applications. The M-series chips are powerful enough to run OpenClaw, SearXNG, and a full development environment simultaneously.</p>
+                <p>The trade-off is that you need to manage uptime yourself, deal with local networking (port forwarding or Tailscale for remote access), handle your own backups, and accept that your agent goes offline if your machine restarts or your internet drops. For businesses where 24/7 uptime matters, this trade-off usually pushes people toward a VPS.</p>
+                <p>For most people reading this openclaw book, the VPS is the better starting point. It is cheaper than a Mac Mini, simpler to set up, more reliable, and easier to secure. You can always move to a Mac Mini later if your needs change, and the migration is straightforward since your agent's entire identity is just files that you can copy.</p>
+
+                <h3>2.2 The "AI Installs AI" Setup</h3>
+                <p>Here is where OpenClaw setup gets genuinely surprising. You do not need to know Linux. You do not need DevOps experience. You do not even need to understand what SSH is. The setup process uses Claude Code (Anthropic's CLI tool) to install everything automatically.</p>
+                <p>The steps are straightforward:</p>
+                <ol>
+                    <li>Install Claude Code on your local machine</li>
+                    <li>Create a Telegram bot via BotFather (or whichever messaging platform you prefer)</li>
+                    <li>Give Claude Code your server IP, SSH key, bot token, and your Claude Code setup token (from your Anthropic subscription)</li>
+                    <li>Claude Code SSHs into your server, installs all dependencies, configures the gateway, connects your messaging platform, and brings your agent online</li>
+                </ol>
+
+                <p class="code-label">Install Claude Code</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>npm install -g @anthropic-ai/claude-code</code>
+                </div>
+
+                <p>After installing, type <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">claude</code> in your terminal to open it up. You will also need your setup token. To get it, open a <strong>new terminal window</strong> and run:</p>
+
+                <p class="code-label">Get your setup token</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>claude setup-token</code>
+                </div>
+
+                <p>This gives you the token that connects Claude Code to your Claude subscription. You will need this during the OpenClaw installation process.</p>
+
+                <p>That is it. AI installing AI. Zero DevOps knowledge required. You do not need to know what nginx is, how to configure a systemd service, or what a reverse proxy does. Claude Code handles all of it: installing Node.js, setting up the gateway process, configuring the messaging bot, creating the workspace directory structure, and starting the agent. The entire process takes about 15 minutes, and you end your first session with a working AI agent responding to your messages in real time.</p>
+                <p><strong>A word of caution:</strong> letting an AI install software on your server is not the most secure way to do things. You are giving Claude Code root access to your machine and trusting it to configure everything correctly. For most people, the convenience massively outweighs the risk, and it is by far the easiest way to get started. But it is worth knowing the trade-off. The good news is that once your agent is up and running, Chapter 10 of this book covers a tonne of security hardening steps you can take to lock everything down: firewall rules, SSH hardening, Tailscale for private networking, file permissions, and more. The way you set it up does not have to be the way it stays.</p>
+                <p>If something goes wrong during setup (and occasionally it does, usually a firewall rule or a typo in a token), Claude Code diagnoses the issue and fixes it. You are not troubleshooting. You are watching your AI install itself.</p>
+
+                <h3>2.3 Essential First Connections</h3>
+                <p>A freshly installed OpenClaw can chat with you, read and write files, execute commands, and browse the web. That alone is useful, but the real power comes when you connect it to the tools you already use every day.</p>
+                <p><strong>First things first: create a dedicated Gmail account for your OpenClaw.</strong> Do not use your personal Gmail. Your agent needs its own identity. Create a new Google account (something like <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">yourname-openclaw@gmail.com</code>) and use that account to sign up for every service your agent will touch: Google Cloud, GitHub, Vercel, API providers, everything. This keeps your personal accounts clean, makes permissions easy to manage, and means you can revoke all agent access in one place if you ever need to. Think of it as giving your new employee their own company email on day one.</p>
+                <p><strong>Groq Whisper</strong> should be your first connection. It gives your agent the ability to understand voice messages using Whisper transcription, and it is completely free. Sign up for a Groq API key at groq.com, then just give the key to your OpenClaw and tell it to set up Whisper transcription. Tell it to store the key securely in your <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">.env</code> file rather than hardcoding it anywhere. Your agent will handle the rest. Once connected, you can send voice notes to your agent instead of typing, which changes the dynamic entirely. Walking down the street and remembering a task? Voice note to your agent. In a meeting and need to capture an action item? Voice note. Driving? Voice note. The barrier between you and your agent drops to zero.</p>
+                <p><strong>SearXNG</strong> is a self-hosted search engine that gives your agent web search capabilities without rate limits or API costs. It runs on the same server as your agent and processes hundreds of searches per day at zero cost. Without SearXNG, your agent is limited to its training data. With SearXNG, it can look up current information, verify facts, research competitors, check prices, and find resources in real time. This is a non-negotiable integration for any serious setup. To set it up, just tell your OpenClaw: "Install SearXNG on this server using Docker and configure yourself to use it for web search." It will pull the Docker image, set up the container, and wire itself to use it automatically.</p>
+                <p><strong>Google Workspace</strong> integration connects Gmail, Google Calendar, and Google Drive. This is the biggest unlock for most business users and the integration that typically produces the most immediate ROI. Your agent can read incoming emails and draft responses, check your schedule and prep for meetings, create and modify calendar events, organize files in Drive, and build automated workflows around all three services. Setting up Google Workspace requires creating a Google Cloud project and configuring OAuth credentials. Here is the best part: your agent can do most of it for you. Tell your OpenClaw: "Set up Google Workspace integration using my dedicated Gmail account." It will walk you through creating the Cloud project, enable the APIs, configure OAuth, and connect everything. You just approve the consent screen when prompted and paste in the authorization code. Store all credentials in your <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">.env</code> file.</p>
+                <p><strong>GitHub and Vercel</strong> let your agent deploy websites and tools. It can write code, push to a repository, trigger a build, and have a live production site deployed in minutes. This becomes critical later when we discuss sub-agents and content automation. Create free accounts on both platforms using your agent's dedicated email, then tell your OpenClaw: "Set up GitHub CLI and Vercel CLI so you can deploy projects." It will install the CLIs, authenticate them, and you are ready to ship. Free Vercel accounts are sufficient for most deployments, meaning your agent can create and maintain websites at zero hosting cost.</p>
+                <p>The order matters. Set up Groq Whisper first (fastest, most immediately useful), then SearXNG (unlocks research), then Google Workspace (unlocks business automation), then GitHub/Vercel (unlocks building). Each connection multiplies the value of the ones before it.</p>
+
+                <h3>2.4 Subscription Tiers</h3>
+                <p>OpenClaw itself is free and open source. The cost comes from the AI model that powers it. I recommend using a <strong>Claude subscription</strong> from Anthropic, which is what OpenClaw is built on and what most of the community uses. You will need to generate a <strong>Claude Code setup token</strong> from your Anthropic subscription to connect your usage. This token is what allows your OpenClaw instance to pull from your subscription quota instead of paying per-API-call.</p>
+                <ul>
+                    <li><strong>$20/month (Claude Pro)</strong> is the trial tier. Enough to test the waters but not enough for real daily use. You will hit rate limits within a few hours of active use.</li>
+                    <li><strong>$100/month (Claude Max)</strong> is where most users land. Enough capacity for daily use including sub-agents, automation, and proactive tasks.</li>
+                    <li><strong>$200/month (Claude Max 2x)</strong> is for heavy users running multiple sub-agents, overnight builds, and high-frequency automation.</li>
+                </ul>
+                <p>Upgrades are prorated. Start at $100 and move up if you find yourself hitting limits. The ROI becomes obvious quickly once your agent starts handling real work.</p>
+
+                <h3>2.5 Onboarding Your Agent</h3>
+                <p>Your agent is running. Your tools are connected. Now comes the most important part of the entire setup, and the step most people rush through: teaching your agent who you are.</p>
+                <p>The quality of your onboarding directly determines the quality of every interaction that follows. An agent that knows your business inside out produces relevant, useful output on the first try. An agent with shallow context guesses, asks clarifying questions, and produces generic results that need heavy editing.</p>
+                <p>The best onboarding method is a deep-dive interview. Tell your agent about yourself and let it ask follow-up questions. Cover your business (what you do, who you serve, your revenue model), your goals (short-term and long-term), your working style (when you work, how you communicate, your preferences), your clients (who they are, what they need, how you serve them), your daily routine (what takes the most time, what you enjoy, what you avoid), and your tools (what you use, what you wish worked better).</p>
+                <p>Expect the interview to take 20 to 30 minutes. That is 30 minutes invested once that pays dividends in every interaction for months. The agent will update USER.md with everything it learns, creating a comprehensive profile that informs every future response.</p>
+                <p>If you have been using ChatGPT, export your conversation history and feed it to your agent. It will analyze months of your conversations and extract patterns about how you think, what you care about, and what you ask for most often. This is surprisingly effective. Your ChatGPT history reveals your communication style, your recurring problems, and the types of tasks you most commonly need help with.</p>
+                <p>Then brainstorm. Ask your agent what it can do for you based on everything it now knows. You will be surprised at the suggestions. It sees your full setup, your tools, your business context, and it can identify automation opportunities you would never think of on your own. One user discovered through this brainstorm that their agent could automate their entire invoicing process, something they had been doing manually for years without thinking of it as automatable.</p>
+                <p>The onboarding workflow that works best follows a pattern you will use for everything: <strong>explain your situation, let the agent flesh out the best approach, agree on what to do, then execute.</strong> This collaborative planning pattern applies to initial setup, daily tasks, and complex projects months down the road. It is the foundation of effective human-AI collaboration.</p>
+
+                <p class="code-label">Onboarding Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>I just set up OpenClaw and I want you to learn about me and my business.
+Ask me questions one at a time to build a comprehensive understanding of:
+- Who I am and what my business does
+- My daily workflow and biggest time sinks
+- What tools and platforms I use
+- My short-term and long-term goals
+- What I wish I could automate
+
+After the interview, update USER.md with everything you learned
+and suggest 5 specific ways you can help me starting today.</code>
+                </div>
+
+            </div>
+
+            <!-- Combined CTA after Chapter 2 -->
+            <div class="cta-duo reveal">
+                <div class="cta-duo__side">
+                    <h3>Don't want to figure it out alone?</h3>
+                    <p>Book a 1-on-1 strategy call and get your OpenClaw set up, optimized, and working for your specific business.</p>
+                    <a href="https://cal.com/jess-mason/openclaw-consultation" class="btn">BOOK A STRATEGY CALL <span class="arrow">&rarr;</span></a>
+                </div>
+                <div class="cta-duo__side">
+                    <h3>Every chapter has a matching mini lesson</h3>
+                    <p>Copy-paste prompts, real configs, and step-by-step walkthroughs from people actually running OpenClaw. Easier to digest than the full book.</p>
+                    <a href="/guide" class="btn">BROWSE THE LESSONS <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 3 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch3">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 3</p>
+                <h2>Skills: How Your Agent Gets Smarter</h2>
+
+                <h3>3.1 What Skills Are</h3>
+                <p>Skills are reusable instruction sets that load only when needed. They live in a <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">skills/</code> folder, each with its own <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">SKILL.md</code> file that tells the agent what the skill does, when to use it, and how to execute it. A skill can also include scripts, templates, configuration files, and any other assets it needs.</p>
+                <p>The concept solves a fundamental problem that every OpenClaw user eventually hits. If you put every instruction into your brain files (AGENTS.md, SOUL.md, etc.), those files bloat quickly. Every message loads ALL brain files into context, so bloated files mean slower, dumber, more expensive responses. An agent with 70KB of context files is paying a token tax on every single interaction for instructions that are irrelevant 95% of the time. Skills fix this by keeping specialized instructions out of the main context until the agent actually needs them.</p>
+                <p>Think of it this way: your brain files are general operating instructions that apply to every interaction. Skills are specialist knowledge that only matters for specific tasks. A skill for writing blog posts does not need to load when the agent is checking your email. A skill for deploying websites does not need to load when the agent is drafting a sales proposal. A skill for SEO auditing does not need to load when the agent is managing your calendar. By keeping these instructions in skills rather than brain files, every interaction is faster, cheaper, and more focused.</p>
+                <p>The file structure is simple. Each skill gets its own directory under <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">skills/</code>:</p>
+                <div class="file-tree">
+skills/
+  email-writer/
+    <span class="highlight">SKILL.md</span>     -- Instructions, triggers, templates
+    templates/   -- Email templates by type
+  seo-audit/
+    <span class="highlight">SKILL.md</span>     -- Audit checklist, output format
+    scripts/     -- Crawler scripts, analysis tools
+  deploy-vercel/
+    <span class="highlight">SKILL.md</span>     -- Deploy process, project IDs
+                </div>
+
+                <h3>3.2 Three Ways to Create Skills</h3>
+                <p><strong>Method 1: From scratch.</strong> Describe what you want and let the agent build it. "Create a skill that writes LinkedIn posts in my voice, with a hook, three value points, and a call to action." The agent creates the SKILL.md, tests it, and refines it based on your feedback. This method works best when you have a clear vision of what the skill should do but have not done the task manually yet. You are designing the process from a blank slate.</p>
+                <p><strong>Method 2: From a completed task.</strong> This is the easiest and most powerful method, and the one most experienced users rely on. After the agent does something well, tell it: "Turn what you just did into a skill." The agent extracts the process, the prompts, the decision logic, the output format, and packages it all into a reusable skill. Next time you need the same kind of work, the agent follows the skill instead of starting from scratch. It does the same work in half the time with better results because the skill encodes everything that worked the first time.</p>
+                <p>The beauty of this method is that you are not designing a skill abstractly. You are capturing a proven process. The agent just did something well, so the skill reflects reality, not theory.</p>
+                <p><strong>Method 3: Explain and refine.</strong> Walk the agent through a process step by step. "Here is how I want you to handle client onboarding: first, review the intake form. Then create a project folder in Drive. Then draft a welcome email using the premium template. Then create a Notion page with the project timeline. Then schedule the kickoff call." The agent listens, asks clarifying questions about edge cases and preferences, and turns your explanation into a structured skill with clear steps, decision trees, and templates.</p>
+                <p>This method works best for processes you already do well manually and want to hand off to the agent. You are teaching, not designing. The agent becomes your apprentice, learning your exact workflow and packaging it for autonomous execution.</p>
+
+                <p class="code-label">Turn a Completed Task into a Skill</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>That was great. Turn what you just did into a reusable skill.
+Include every step, the decision logic you used, and any templates.
+Save it to skills/ with a clear SKILL.md so you can repeat
+this exact process whenever I ask.</code>
+                </div>
+
+                <h3>3.3 The Feedback Loop</h3>
+                <p>Skills get better over time, but only if you give feedback. This is the compounding mechanism that makes OpenClaw fundamentally different from other AI tools, and it is the single most important habit to develop as an OpenClaw user.</p>
+                <p>The cycle works like this: you use a skill, the output is not perfect, you give specific feedback, the agent updates the skill, and next time the output is better. Every edit is permanent. Every refinement compounds. After five or six rounds of feedback, a skill that started producing decent output is now producing excellent output, tailored exactly to your standards.</p>
+                <p>To illustrate: your email writing skill produces an email that is technically fine but too formal for this particular client. You say: "Too formal for casual clients. Add a rule: if the client relationship is marked as casual in the CRM, use a friendly tone with first names and shorter sentences. Update the skill." The agent modifies the SKILL.md to include this logic. From now on, every email to casual clients automatically gets the right tone. You never give that feedback again.</p>
+                <p>Now multiply that across dozens of small refinements over weeks. The skill accumulates your judgment, your preferences, your taste. After two months of feedback, the email skill knows your voice better than a new hire would after six months of training. That is the compounding effect in action.</p>
+                <p>The critical detail most users miss: <strong>always tell the agent to update the skill itself.</strong> Saying "that email was too long" gives the agent a one-time correction. It adjusts this response but forgets by next session. Saying "that email was too long, update the skill so all future emails are under 150 words" gives the agent a permanent correction that applies to every future use of that skill. The difference is enormous over time. One approach gives you incremental help. The other builds a permanently improving system.</p>
+
+                <p class="code-label">Feedback Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Good output, but two changes needed:
+1. [Specific feedback about what to change]
+2. [Specific feedback about what to change]
+
+Update the skill with these changes so all future runs
+follow these new guidelines automatically.</code>
+                </div>
+
+                <h3>3.4 Notable Community Skills</h3>
+                <p>The OpenClaw community has built hundreds of skills. Here are the most impactful ones:</p>
+                <ul>
+                    <li><strong>QMD (Query Memory Database)</strong> achieves 95% token reduction by using BM25 search and GGUF embeddings to find relevant context instead of loading entire files. Essential for large knowledge bases.</li>
+                    <li><strong>SuperMemory</strong> provides persistent, searchable memory that goes beyond simple file-based storage. Useful for agents managing large amounts of evolving information.</li>
+                    <li><strong>Agent Browser</strong> gives your agent the ability to interact with websites: fill forms, click buttons, extract data, and automate web workflows.</li>
+                    <li><strong>Frontend Design</strong> enables professional website building. The agent can create, style, and deploy complete sites using modern frameworks.</li>
+                    <li><strong>Prompt Injection Defense</strong> protects your agent in group chat environments where other users might try to manipulate it.</li>
+                </ul>
+
+                <div class="callout callout-warning">
+                    <p><strong>Warning: Always vet third-party skills before installing.</strong> Cisco's security team found malware in 37 popular skills on the community hub. A skill has the same access as your agent, which means it has access to your files, your shell, your messages, and everything connected. Read the SKILL.md yourself before installing anything. Use the Cisco Skill Scanner if available. Trust but verify.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 4 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch4">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 4</p>
+                <h2>How to Prompt: Think Before You Execute</h2>
+
+                <h3>4.1 The Golden Rule: Flesh Out Before Executing</h3>
+                <p>Most people get disappointing results from AI because they skip straight to execution. They type "build me a landing page" and are surprised when the output is generic, unfocused, and wrong in a dozen small ways. Then they blame the AI. The fix is not better prompts, a fancier model, or more expensive tokens. It is better process.</p>
+                <p>The workflow that consistently produces excellent results follows four steps: explain your idea, let the agent ask clarifying questions, agree on the approach together, then execute. This simple change transforms your results because the agent is not guessing what you want. It knows. You told it. And more importantly, you reviewed its understanding before it started working. If its plan is wrong, you catch it before any effort is wasted.</p>
+                <p>Think about how you would work with a new employee. You would not say "build me a landing page" and walk away. You would describe the product, the audience, the tone, the goal, the design preferences, the competitive landscape, and the conversion objective. You would answer their questions. Then you would review their plan before they started building. If the plan was wrong, you would correct it before they spent eight hours going the wrong direction.</p>
+                <p>The same principle applies to your AI agent. It is smart, but it is not psychic. It does not know which of the hundred possible interpretations of "build me a landing page" you have in your head. The five minutes you spend fleshing out the approach saves hours of revision and frustration. This is not about writing longer prompts. It is about creating a conversation where the agent builds understanding before it builds anything else.</p>
+                <p>The investment scales with complexity. For a simple email, a one-sentence prompt is fine because the agent has your email skill and your communication preferences. For a landing page, spend five minutes on the brief. For a multi-week project, spend an hour on planning (see Chapter 5). The rule of thumb: if the task will take the agent more than ten minutes to execute, spend at least two minutes defining it.</p>
+
+                <p class="code-label">The "Flesh Out First" Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>I want to [describe the goal]. Before you start building anything,
+let's flesh out the approach together.
+
+Ask me clarifying questions about:
+- The audience and purpose
+- Any constraints or preferences I have
+- What success looks like
+
+Then propose a plan. I'll review it before you execute.</code>
+                </div>
+
+                <h3>4.2 Meta Prompting</h3>
+                <p>Meta prompting is the practice of getting your agent to write its own prompts. Instead of crafting the perfect prompt yourself, you describe what you want to accomplish and let the agent generate the prompt that will produce the best result. This works because LLMs understand their own capabilities and constraints better than you do. They know what instructions produce sharp output and what phrasing leads to vague, generic responses.</p>
+                <p>The simplest form: tell your agent what you need, then ask it to write the prompt that would get the best version of that output. Review the prompt, tweak if needed, then feed it back. You are using the AI to prompt the AI. The result is almost always better than what you would have written yourself, because the agent optimizes for how it actually processes instructions rather than how you think it processes them.</p>
+                <p>This gets powerful when you chain it. Ask the agent to write a prompt, run that prompt, evaluate the output, then refine the prompt based on what worked and what did not. After two or three rounds, you have a battle-tested prompt that consistently produces excellent results. Save that prompt in a skill, and you never have to think about it again.</p>
+                <p>Meta prompting is especially useful for tasks you do not know how to prompt well. Writing ad copy, generating technical documentation, creating email sequences, building outreach templates. Instead of Googling "best ChatGPT prompt for X," ask your agent to design the prompt. It has full context on your business, your voice, your goals. The prompt it writes will be tailored to your specific situation, not some generic template from a prompt library.</p>
+
+                <p class="code-label">Basic Meta Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>I need to write a cold outreach email to SaaS founders
+who might need AI automation.
+
+Write the best possible prompt that would produce
+a high-converting outreach email. Include instructions
+about tone, length, personalization, and CTA.
+
+Then run that prompt yourself and show me the result.</code>
+                </div>
+
+                <p class="code-label">Iterative Meta Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Here's my current prompt for writing LinkedIn posts:
+[paste your prompt]
+
+Rewrite this prompt to get better results. Make it more
+specific, add constraints that improve quality, and include
+examples of what good output looks like.
+
+Then test your new version and show me the difference.</code>
+                </div>
+
+                <p class="code-label">Skill-Building Meta Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>I want a skill that drafts weekly client reports.
+Design the complete prompt/instruction set for this skill.
+
+Think about: what context it needs, what format works best,
+what makes a report actually useful vs generic.
+
+Write the SKILL.md yourself. Make it something that
+produces great output every time without my input.</code>
+                </div>
+
+                <p>Run these meta prompts monthly. Your agent sees your entire setup and has ideas you would never think of. The Business Boost Audit alone has generated actionable revenue ideas for every single client who has tried it.</p>
+
+                <h3>4.3 The Feedback Prompt</h3>
+                <p>There is a massive difference between bad feedback and good feedback, and the difference determines whether your agent improves or stays stuck at the same level.</p>
+
+                <div class="compare-grid">
+                    <div class="compare-col bad">
+                        <h4>Bad Feedback</h4>
+                        <p style="color:var(--text-secondary);font-size:0.95rem;">"The email was too long."</p>
+                        <p style="color:var(--text-secondary);font-size:0.95rem;">"Make it better."</p>
+                        <p style="color:var(--text-secondary);font-size:0.95rem;">"That's not what I wanted."</p>
+                    </div>
+                    <div class="compare-col good">
+                        <h4>Good Feedback</h4>
+                        <p style="color:var(--text-secondary);font-size:0.95rem;">"Under 100 words. Second paragraph felt salesy. Value hint should be one sentence max."</p>
+                        <p style="color:var(--text-secondary);font-size:0.95rem;">"Update the skill with this feedback."</p>
+                    </div>
+                </div>
+
+                <p>Bad feedback is vague and temporary. The agent adjusts for this one response but forgets by next session. Good feedback is specific and permanent when you tell the agent to update the skill. The difference compounds over weeks and months. An agent that gets good feedback for six months is an order of magnitude better than one that gets bad feedback for the same period.</p>
+                <p>Be specific about what to change. Be explicit about updating the skill. And be consistent. Every piece of feedback is an investment in your agent's long-term capability.</p>
+
+                <h3>4.4 Copy-Paste Prompt Toolkit</h3>
+                <p>Here are the most useful prompts from the OpenClaw ecosystem, ready to copy and use:</p>
+
+                <p class="code-label">Brainstorm Use Cases</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Based on everything you know about me, my business,
+my tools, and my current setup, brainstorm 15 specific
+things you could do for me that I haven't asked for yet.
+
+Focus on things that save time, make money, or reduce
+friction. Be specific, not generic.</code>
+                </div>
+
+                <p class="code-label">Skill Creation Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Create a new skill for [task description].
+
+The skill should:
+- [Specific requirement 1]
+- [Specific requirement 2]
+- [Specific requirement 3]
+
+Include clear instructions in SKILL.md, any templates
+needed, and example inputs/outputs. Save to skills/
+and test it with a sample run.</code>
+                </div>
+
+                <p class="code-label">Context File Audit</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Audit all of your context files right now.
+Check AGENTS.md, SOUL.md, USER.md, TOOLS.md,
+MEMORY.md, and HEARTBEAT.md.
+
+For each file, report:
+- Current size (lines and approximate tokens)
+- Content that should be moved to a skill
+- Content that is outdated and should be deleted
+- Content that is verbose and should be compressed
+
+Then make the changes. Show me before/after sizes.</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 5 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch5">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 5</p>
+                <h2>Planning: Most Work Is Done Before Building</h2>
+
+                <h3>5.1 Why Planning Matters</h3>
+                <p>Most failed projects fail because they started building too fast. This is true in software development, true in business, and especially true with AI agents. The temptation is strong: your agent can build things quickly, so why not just start? Because speed without direction produces waste, not results.</p>
+                <p>Any project that involves more than three steps or will take more than two hours needs a plan document first. Not a conversation. Not a "mental note." A real document that the agent (and you) can reference throughout the build. The plan IS the work. Building is just execution of a plan that already exists.</p>
+
+                <h3>5.2 The Planning Workflow</h3>
+                <p>The workflow is straightforward: explain the project to your agent, let it flesh out the best approach, agree on scope and approach together, then create a plan document.</p>
+                <p>A good plan document covers the problem you are solving, the scope of the solution (what is in and what is out), the solution approach, potential risks, success criteria, and a step-by-step task breakdown. Each task should be small enough to complete in a single session.</p>
+
+                <p class="code-label">Project Planning Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>I want to build [project description].
+
+Before we start, create a plan document. Cover:
+- Problem we're solving
+- Scope (what's in, what's out)
+- Solution approach
+- Risks and how to mitigate them
+- Success criteria
+- Step-by-step task list
+
+Save the plan to a file you can reference while building.
+Don't start building until I approve the plan.</code>
+                </div>
+
+                <h3>5.3 Build Logs: Never Lose Context</h3>
+                <p>This is one of the most important practices in the entire openclaw book, and almost nobody does it until they lose hours of work to a crashed session.</p>
+                <p>Before building ANYTHING complex, create a build log file: <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">memory/build-project-name.md</code>. Log every step as it happens: what was done, what worked, what broke, what is next. This file is your insurance policy against sessions that crash, time out, or run into rate limits.</p>
+                <p>If a session crashes mid-build, the next session reads the build log and picks up exactly where the last one left off. No lost context. No repeated work. No starting over.</p>
+                <p>When using sub-agents (Chapter 8), the build log becomes the source of truth. Every sub-agent reads it before starting and updates it after every step. The main agent checks the log to monitor progress. Conversation history is ephemeral. The build log is permanent.</p>
+                <p>The rule is simple: <strong>if it is not written down, it did not happen.</strong> Text beats memory every single time.</p>
+
+                <p class="code-label">Build Log Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Before we start building, create a build log at
+memory/build-[project-name].md
+
+Log format:
+- Project name and goal
+- Plan reference
+- Step-by-step progress (update after each step)
+- What worked, what broke, what to try next
+- Current status and next action
+
+Read this file first at the start of every session.
+Update it after every significant step.</code>
+                </div>
+
+                <h3>5.4 Managing Sub-Agent Projects</h3>
+                <p>When a project is large enough to involve sub-agents (specialist AI workers, covered in Chapter 8), the planning layer becomes even more critical. The key rule: <strong>one feature per spawn.</strong> Never tell a sub-agent to "build the whole thing." Break the project into discrete tasks and assign one task per sub-agent session.</p>
+                <p>Each sub-agent's task should include a clear instruction to read the build log first and update it after every step. The main agent monitors progress by checking the build log, not by reading conversation transcripts. If a sub-agent is stuck for more than ten minutes with no progress in the build log, the main agent intervenes.</p>
+                <p>This approach scales remarkably well. Projects that would take a single agent days to complete can be broken into parallel sub-agent tasks and finished in hours. But only if the planning and logging discipline is solid. Without a build log, sub-agents work in isolation, duplicate effort, and produce conflicting results.</p>
+            </div>
+
+            <!-- CTA after Chapter 5 -->
+            <div class="guide-cta reveal">
+                <h3>Complex project? Let's plan it together.</h3>
+                <p>Get a professional architecture review and implementation plan for your OpenClaw deployment. No guesswork.</p>
+                <a href="https://cal.com/jess-mason/openclaw-consultation" class="btn">Book a Strategy Call <span class="arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 6 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch6">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 6</p>
+                <h2>Optimization: Make It 10x Smarter</h2>
+
+                <h3>6.1 The Token Problem</h3>
+                <p>Every single message you send loads ALL of your brain files into context. Every word in AGENTS.md, SOUL.md, USER.md, TOOLS.md, MEMORY.md, and HEARTBEAT.md gets sent to the model with every interaction. This means bloated files directly cause three problems: slower responses, lower quality output, and higher costs.</p>
+                <p>Most setups, especially those that have been running for a few months, have 50 to 70 percent unnecessary content in their context files. MEMORY.md becomes a diary instead of a distilled reference. TOOLS.md accumulates how-to guides instead of staying a quick lookup sheet. AGENTS.md gets instructions that belong in skills. The bloat creeps in gradually, and most users never notice because there is no visible error. The agent just gets slightly worse, slightly slower, slightly more expensive, every week.</p>
+                <p>The fix is simple: audit regularly and move specialized instructions into skills that load on demand instead of every single message.</p>
+
+                <h3>6.2 The Audit Prompt</h3>
+                <p>One prompt can cut your context size in half. The audit prompt tells your agent to examine every one of its own brain files, identify what is bloated, what is outdated, what should be a skill instead of a permanent instruction, and make the changes.</p>
+
+                <p class="code-label">The Audit Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Audit all of your context files right now.
+For each file (AGENTS.md, SOUL.md, USER.md, TOOLS.md,
+MEMORY.md, HEARTBEAT.md), report:
+
+1. Current size (lines and KB)
+2. Content that belongs in a skill, not a brain file
+3. Content that is outdated and should be deleted
+4. Content that is verbose and can be compressed
+
+Then make the changes. Move instructions to skills.
+Delete outdated content. Compress verbose sections.
+Show me before/after file sizes.</code>
+                </div>
+
+                <p>Real results from running this prompt on a 3-month-old setup: <strong>73KB total context reduced to 31KB.</strong> That is a 57% reduction. The agent became noticeably faster and more focused in its responses.</p>
+                <p>Run this audit monthly. Context files bloat back over time as you add new instructions, log new information, and expand your setup. Monthly audits keep things lean.</p>
+
+                <h3>6.3 Context File Best Practices</h3>
+                <p>Here are the rules that keep your context files efficient:</p>
+                <p><strong>TOOLS.md should contain addresses and account names ONLY.</strong> Not how-to guides. Not setup instructions. Not troubleshooting notes. If you find yourself writing paragraphs in TOOLS.md, that content belongs in a skill. TOOLS.md is a quick-reference sheet: "GitHub username: X. Vercel team: Y. SSH host: Z." That is it.</p>
+                <p><strong>MEMORY.md should be compact and curated.</strong> The biggest mistake users make is letting MEMORY.md become a diary. Every interesting thing that happens gets logged, and within a month the file is 2,000 lines of chronological notes that the agent loads into every single message. Instead, maintain MEMORY.md as a distilled reference. Archive old daily notes to separate files in the <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">memory/</code> folder. Keep only active, relevant context in MEMORY.md itself. Build an index so the agent knows where to find archived information when it needs it.</p>
+                <p><strong>HEARTBEAT.md should be a short checklist, not a manifesto.</strong> Remove expired one-shot tasks. Keep recurring items brief. If a heartbeat item requires complex instructions, put those instructions in a skill and just reference the skill name in HEARTBEAT.md.</p>
+                <p><strong>Any file over 100 lines is almost certainly bloated.</strong> This is not a hard rule, but it is a strong signal. If your AGENTS.md is 300 lines, at least half of that content should probably be skills.</p>
+
+                <h3>6.4 Smart Model Routing</h3>
+                <p>Not every task needs the most expensive model. Smart routing sends simple tasks to cheaper, faster models and reserves the powerful models for complex work.</p>
+                <ul>
+                    <li><strong>Haiku (or equivalent fast model)</strong> for simple tasks: quick lookups, file formatting, basic questions, routine automation</li>
+                    <li><strong>Sonnet (or equivalent mid-tier model)</strong> for standard work: email drafting, content writing, code generation, most daily tasks</li>
+                    <li><strong>Opus (or equivalent top-tier model)</strong> for complex and security-sensitive tasks: multi-step reasoning, architectural decisions, prompt injection resistance, critical business logic</li>
+                </ul>
+                <p>The cost difference is significant. A setup running exclusively on Opus might cost $200/month. The same workload with smart routing might cost $80/month while getting equally good (sometimes better) results, because simpler models make fewer unnecessary decisions on straightforward tasks.</p>
+                <p>One important note on security: Opus-class models have measurably better resistance to prompt injection attacks. In group chat environments or anywhere your agent processes input from untrusted sources, use the strongest model available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 7 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch7">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 7</p>
+                <h2>Proactive AI: Your 24/7 Employee</h2>
+
+                <h3>7.1 The Proactive Mindset</h3>
+                <p>Most people use OpenClaw as a reactive tool. They ask a question, they get an answer. They give a task, they get a result. That is just a chatbot with extra steps. The real power of OpenClaw is proactive behavior: the agent monitors, checks, builds, and messages YOU first, without being asked.</p>
+                <p>The mindset shift is fundamental. A reactive assistant waits for instructions. A proactive employee identifies problems, surfaces opportunities, and takes initiative. The difference between the two is the difference between a tool and a team member. Everything in this chapter is about making that transition.</p>
+
+                <h3>7.2 Heartbeats</h3>
+                <p>Heartbeats are periodic check-ins where your agent wakes up, reads its HEARTBEAT.md checklist, and acts on whatever needs attention. The default interval is every 30 minutes, but you can configure it to any frequency.</p>
+                <p>When the heartbeat triggers, the agent reads HEARTBEAT.md and works through the checklist. Check for new emails. Review upcoming calendar events. Monitor lead pipeline. Check if any cron jobs need attention. If something needs your attention, the agent messages you. If everything is quiet, it goes back to sleep.</p>
+                <p>The cost is pennies per day. Each heartbeat is a short interaction that loads context, checks the list, and either acts or stays silent. For the price of a few cents, your agent is aware of your business state multiple times per hour.</p>
+                <p>Frequency tiers help you organize what gets checked when:</p>
+                <ul>
+                    <li><strong>Every heartbeat</strong> (every 30 min): critical items like booking alerts, urgent email flags</li>
+                    <li><strong>1-2x daily:</strong> email summary, calendar review, lead status, content reminders</li>
+                    <li><strong>Weekly:</strong> analytics review, pipeline report, strategy check-in</li>
+                </ul>
+
+                <p class="code-label">Heartbeat Setup Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Set up my heartbeat system. Create HEARTBEAT.md with:
+
+Every heartbeat (30 min):
+- Check for new booking/meeting alerts
+- Flag urgent emails
+
+Daily (morning):
+- Calendar briefing for today
+- Email summary (important only)
+- Lead pipeline status
+- Content calendar check
+
+Weekly (Monday morning):
+- Analytics summary
+- Pipeline report
+- Wins and losses from last week
+
+Keep the file concise. Reference skills for complex tasks
+instead of putting full instructions in HEARTBEAT.md.</code>
+                </div>
+
+                <h3>7.3 Cron Jobs</h3>
+                <p>Heartbeats are periodic awareness. Cron jobs are exact-time tasks. The distinction matters: use heartbeats for batch checks that can drift slightly in timing, and cron jobs for tasks that need to happen at a precise time.</p>
+                <p>Good cron job candidates include:</p>
+                <ul>
+                    <li><strong>Morning report at 7:00 AM:</strong> daily briefing delivered to your inbox before you start work</li>
+                    <li><strong>Content reminders at specific times:</strong> "Did you post on LinkedIn today?" at 10 AM and 2 PM</li>
+                    <li><strong>Overnight builder at 11:00 PM:</strong> agent picks a project from your ideas list and builds while you sleep</li>
+                    <li><strong>Weekly analytics every Monday at 8:00 AM:</strong> SEO rankings, traffic trends, lead conversion rates</li>
+                    <li><strong>Expired cron cleanup monthly:</strong> remove one-shot crons that have already fired</li>
+                </ul>
+                <p>The decision framework is simple: if the timing matters, use a cron job. If you just need the agent to check periodically, use a heartbeat item. If you want to combine multiple checks into a single interaction (reducing API costs), batch them into the heartbeat.</p>
+
+                <h3>7.4 Morning Reports</h3>
+                <p>The morning report is the single most valuable proactive feature for business users. Every morning at a time you choose, your agent delivers a brief, structured summary of everything you need to know.</p>
+                <p>A good morning report covers:</p>
+                <ul>
+                    <li><strong>Calendar:</strong> today's meetings with prep notes</li>
+                    <li><strong>Email:</strong> important messages that need responses (not every email, just the ones that matter)</li>
+                    <li><strong>Leads:</strong> new inquiries, stale leads that need follow-up, pipeline changes</li>
+                    <li><strong>Content:</strong> what is due today, what was published yesterday and its performance</li>
+                    <li><strong>Quick wins:</strong> small tasks you can knock out in 5 minutes</li>
+                    <li><strong>Overnight activity:</strong> what the agent built or researched while you slept</li>
+                </ul>
+                <p>Keep it SHORT. The morning report should take 60 seconds to read. If it takes longer, the agent is including too much detail. The goal is awareness, not analysis. If you need deeper information on any item, ask the agent to expand on it.</p>
+
+                <p class="code-label">Morning Report Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Set up a morning report cron job for 7:00 AM every day.
+
+The report should cover:
+- Today's calendar (meetings + prep notes)
+- Important emails (3-5 max, not everything)
+- Lead pipeline changes since yesterday
+- Content due today
+- 2-3 quick wins I can knock out fast
+- What you worked on overnight
+
+Keep the entire report under 300 words.
+Deliver it to [your preferred channel].</code>
+                </div>
+
+                <h3>7.5 Accountability Mode</h3>
+                <p>This is one of the most surprisingly effective features. Accountability mode turns your agent into a productivity coach that checks in at escalating levels of intensity throughout the day.</p>
+                <p>The pattern works like this:</p>
+                <ol>
+                    <li><strong>Morning (gentle):</strong> "Here is what you said you would do today. Ready to start?"</li>
+                    <li><strong>Midday (direct):</strong> "You have 3 of 5 tasks done. The LinkedIn post and client follow-up are still open. What is the plan?"</li>
+                    <li><strong>Afternoon (firm):</strong> "The client follow-up is now 6 hours late. Is that a reason or an excuse?"</li>
+                    <li><strong>End of day (final call):</strong> "Today's score: 3/5. Your streak is now 0 days. Tomorrow is a fresh start."</li>
+                </ol>
+                <p>The agent tracks streaks in a file. How many consecutive days you completed all your committed tasks. The streak creates a surprising amount of motivation. Breaking a 12-day streak because you skipped one task feels genuinely bad, and that is the point.</p>
+                <p>Set up cron jobs for each check-in level. The agent reads your task list, checks what is done, and calibrates its tone based on progress. Some users find this mildly annoying. Most find it transformatively effective.</p>
+
+                <h3>7.6 Overnight Autonomous Work</h3>
+                <p>Your agent does not sleep. Your agent does not need rest. And your agent can do meaningful work at 3:00 AM while you are unconscious. This is one of the biggest advantages of proactive AI that most users underutilize.</p>
+                <p>The <strong>nightly builder</strong> is a cron job that fires at a set time each night. The agent looks at your ideas list (a file you maintain with project ideas, improvements, and tasks), picks something small enough to complete in a single session, and builds it. When you wake up, you have a finished deliverable ready for review.</p>
+                <p>Good nightly builder candidates include: simple tools and utilities, content drafts, research summaries, data analysis, website updates, documentation, competitor research, and any task that does not require your input to complete.</p>
+
+                <p class="code-label">Nightly Builder Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Set up a nightly builder cron job for 11:00 PM.
+
+Every night:
+1. Read memory/ideas.md for the project list
+2. Pick the highest-priority item that can be completed
+   in a single session without my input
+3. Build it
+4. Log what you built in the morning report
+5. Mark the item as done in the ideas list
+
+If nothing on the list is suitable, do a useful proactive
+task instead: research, content drafts, or system optimization.</code>
+                </div>
+
+                <p><strong>Overnight research batches</strong> take this further. Queue three or four research topics, spawn sub-agents for each one (staggered 20-30 minutes apart to avoid rate limits), and wake up to finished research reports. A single overnight session can produce research that would take you an entire workday to complete manually.</p>
+
+                <h3>7.7 Lead and Opportunity Monitoring</h3>
+                <p>For business users, proactive lead monitoring is where OpenClaw starts paying for itself in hard revenue.</p>
+                <p><strong>Instant booking alerts</strong> notify you the moment someone books a call. But the agent does not just alert you. It automatically researches the prospect: their company, their LinkedIn, their recent activity, their likely pain points. By the time you see the booking notification, you already have a prep brief.</p>
+                <p><strong>CRM tracking</strong> monitors your lead pipeline and flags stale leads. "This prospect expressed interest 8 days ago and you have not followed up. Want me to draft a follow-up email?" The agent tracks every lead, every interaction, and every deadline, and it does not let things fall through the cracks.</p>
+                <p><strong>Opportunity scouting</strong> monitors Reddit, Twitter, competitor sites, job boards, and industry forums for mentions of your keywords, your competitors, and your service category. When someone posts "looking for help with [your specialty]," your agent can alert you within the hour. That is lead generation on autopilot.</p>
+            </div>
+
+            <!-- CTA after Chapter 7 -->
+            <div class="guide-cta reveal">
+                <h3>Ready for a proactive AI employee?</h3>
+                <p>Let's set up heartbeats, morning reports, and automated lead monitoring tailored to your business.</p>
+                <a href="https://cal.com/jess-mason/openclaw-consultation" class="btn">Book a Strategy Call <span class="arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 8 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch8">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 8</p>
+                <h2>Sub-Agents: Build Your AI Team</h2>
+
+                <h3>8.1 The Concept</h3>
+                <p>A single AI agent is powerful. A team of specialist AI agents is transformative. Sub-agents let you build exactly that: a team of focused workers, each with its own personality, expertise, and job description, all managed by your main agent.</p>
+                <p>The mental model is simple. You are the owner. Your main agent is the CEO. Sub-agents are specialist employees. You talk to one agent (the CEO), and that agent runs a team behind the scenes, delegating tasks to the right specialist, monitoring progress, and bringing you the results.</p>
+                <p>Each sub-agent has its own SOUL.md (personality and communication style) and AGENTS.md (job instructions and constraints). A content writer sub-agent has a creative personality and instructions for your brand voice. A research sub-agent has an analytical personality and instructions for source verification. A website builder sub-agent has a technical personality and deployment skills. They are all different, and they are all good at their specific job because they are not trying to be good at everything.</p>
+
+                <h3>8.2 Types to Build</h3>
+                <p>Start with two or three sub-agents based on your most common bottlenecks. Here are the six most useful types:</p>
+                <p><strong>Website Builder:</strong> Deploys to Vercel, uses the frontend-design skill, handles everything from landing pages to full applications. Give it a brief and get a live URL in minutes.</p>
+                <p><strong>SEO Agent:</strong> Runs site audits, builds programmatic SEO pages at scale, tracks keyword rankings, identifies content gaps, and monitors competitor movements. The ideal overnight worker.</p>
+                <p><strong>Competitor Research:</strong> Monitors competitor websites for pricing changes, feature updates, and marketing shifts. Produces weekly intelligence reports. Identifies weaknesses you can exploit.</p>
+                <p><strong>Content Writer:</strong> Learns your voice through feedback and produces multi-platform content. Blog posts, LinkedIn articles, email newsletters, Twitter threads. The feedback loop is critical here because voice consistency takes several rounds to dial in.</p>
+                <p><strong>Outreach Agent:</strong> Researches prospects, personalizes cold emails based on actual company data and recent activity, and manages follow-up sequences. This is not mass email blasting. It is researched, personalized outreach at scale.</p>
+                <p><strong>Research Agent:</strong> Deep dives into any topic with comprehensive source collection. Produces structured reports with citations. Useful for market research, competitive analysis, technology evaluation, and due diligence.</p>
+                <p>Do not build all six at once. Start with the two that address your biggest bottlenecks. Add more as you find new areas where specialist focus would produce better results than your main agent's generalist approach.</p>
+
+                <h3>8.3 Creating a Sub-Agent</h3>
+                <p>Creating a sub-agent is a conversation with your main agent. Describe what you need and let the agent handle the technical setup.</p>
+
+                <p class="code-label">Sub-Agent Creation Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Help me create a sub-agent called [NAME] that specializes
+in [SPECIALTY].
+
+It should:
+- [Key capability 1]
+- [Key capability 2]
+- [Key capability 3]
+
+Personality: [describe the tone and style]
+
+Set up its workspace, SOUL.md, AGENTS.md, and any skills
+it needs. After setup, suggest improvements I haven't
+thought of.</code>
+                </div>
+
+                <p>The agent handles all technical configuration: creating the workspace, writing the SOUL.md and AGENTS.md, installing relevant skills, and configuring access permissions. After setup, ask "What else can you think of to improve this sub-agent?" The main agent usually has good suggestions based on its understanding of your workflow.</p>
+
+                <h3>8.4 Management Rules</h3>
+                <p>Sub-agents are powerful but they need discipline to work well. These rules prevent the most common problems:</p>
+                <p><strong>Stagger spawns 20-30 minutes apart.</strong> Spawning five sub-agents simultaneously creates rate limit problems and resource contention. Space them out and each one gets the API capacity it needs.</p>
+                <p><strong>Never give sub-agents their own heartbeats.</strong> Heartbeats are for your main agent only. Sub-agents are ephemeral workers: spin up, do the job, shut down. Giving a sub-agent a heartbeat wastes tokens and creates unnecessary background activity.</p>
+                <p><strong>Sub-agents are ephemeral.</strong> They exist to complete a task, not to persist. The main agent spawns a sub-agent for a specific job, the sub-agent completes it (updating the build log along the way), and then the session ends. Do not create persistent sub-agents that run indefinitely.</p>
+                <p><strong>Monitor via the main agent's heartbeat.</strong> Your main agent should check on sub-agent progress during its regular heartbeat cycle. If a sub-agent has been running for more than ten minutes with no build log updates, the main agent should check in and intervene if necessary.</p>
+
+                <h3>8.5 Practical Workflows</h3>
+                <p><strong>Overnight research batch.</strong> Before bed, queue three or four research topics. Your main agent spawns sub-agents for each one, staggered 20-30 minutes apart. Each sub-agent researches its topic, produces a structured report, and updates the build log. You wake up to finished research ready for review.</p>
+                <p><strong>Website in 10 minutes.</strong> Give your main agent a brief for a landing page. It spawns the website builder sub-agent, which designs, codes, and deploys the site. You get a live URL and a deployment summary. Review, give feedback, and iterate.</p>
+                <p><strong>Content pipeline.</strong> The content writer sub-agent produces drafts. The main agent reviews them against your brand guidelines. A graphics sub-agent handles images and thumbnails. The main agent assembles everything and presents the final package for your approval. You approve or request changes. The approved content gets scheduled for publication.</p>
+                <p><strong>Lead machine.</strong> The research sub-agent finds prospects matching your ideal customer profile. The outreach sub-agent drafts personalized emails based on the research. Everything lands in a queue for your review. You approve, edit, or reject each outreach message. The agent handles sending approved messages and tracking responses.</p>
+
+                <h3>8.6 Information Isolation and Token Savings</h3>
+                <p>Sub-agents have an underappreciated security benefit: information isolation. A content writer sub-agent does not have access to your main agent's private data, client information, or business intelligence. It has exactly the context it needs to do its job, nothing more.</p>
+                <p>This isolation also saves tokens. A sub-agent with a lean, focused context file set costs significantly less per interaction than your main agent with its full context. Multiply that saving across dozens of daily sub-agent interactions and the cost difference is meaningful.</p>
+                <p>And the output quality often improves. A focused agent with a narrow context produces better work within its specialty than a generalist agent trying to do everything. Specialization works for humans and it works for AI agents.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 9 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch9">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 9</p>
+                <h2>Real-World Use Cases</h2>
+
+                <h3>9.1 SEO Domination</h3>
+                <p>Search engine optimization is one of the highest-ROI use cases for OpenClaw because SEO work is repetitive, data-heavy, and rewards consistency. All three of those qualities play to an AI agent's strengths.</p>
+
+                <h4>Site Audits</h4>
+                <p>Your agent can crawl your entire website and produce a comprehensive technical SEO audit: missing or duplicate meta tags, broken schema markup, slow-loading pages, missing alt text on images, broken links, thin content pages, canonical URL issues, mobile rendering problems, and indexing errors. The audit that a human SEO specialist charges $2,000 to produce takes your agent about 20 minutes.</p>
+
+                <h4>Keyword Research</h4>
+                <p>Connect Google Search Console and your agent can pull your actual keyword data: which queries bring traffic, which pages rank for what terms, and where the opportunities are. The most valuable targets are "striking distance" keywords that rank between positions 5 and 20. These are terms where a focused content improvement can push you onto page one. Your agent identifies these automatically and suggests specific actions for each one.</p>
+                <p>Competitor gap analysis takes this further. Your agent identifies keywords your competitors rank for that you do not, clusters them by topic, and produces a content plan to close the gaps.</p>
+
+                <h4>Programmatic SEO</h4>
+                <p>Programmatic SEO (pSEO) is the practice of generating large numbers of targeted pages at scale. Comparison pages ("Your Product vs Competitor"), use case pages ("Your Product for [Industry]"), location pages ("Your Service in [City]"), and tool-specific pages ("Your Product + [Integration]"). An agent can produce hundreds of these with proper meta tags, schema markup, internal linking, and unique content for each page.</p>
+
+                <p class="code-label">SEO Audit Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Run a complete SEO audit on [website URL].
+
+Check:
+- Meta titles and descriptions (missing, duplicates, length)
+- Schema/structured data markup
+- Page load speed issues
+- Image alt text
+- Broken links (internal and external)
+- Thin content pages (under 300 words)
+- Canonical URLs
+- Mobile rendering
+- Indexing issues (robots.txt, sitemap)
+
+Produce a prioritized action list sorted by impact.
+Include the specific fix for each issue.</code>
+                </div>
+
+                <h4>Content Optimization</h4>
+                <p>Existing content that underperforms can be systematically improved. Your agent rewrites titles and meta descriptions for better click-through rates, adds FAQ sections targeting "People Also Ask" queries, identifies content gaps where topics are mentioned but not fully covered, builds internal linking between related pages, and adds schema markup for rich snippets. Each optimization is small, but across dozens of pages the cumulative effect on traffic is significant.</p>
+
+                <h4>Monitoring and Reporting</h4>
+                <p>Weekly automated reports track keyword rankings, traffic trends, indexing health, and competitor movements. Your agent flags anomalies: sudden ranking drops, traffic spikes, new competitor pages targeting your keywords, or indexing errors that need attention. This monitoring runs continuously without any manual effort.</p>
+
+                <h3>9.2 YouTube Content Machine</h3>
+                <p>Building a YouTube channel is one of the most labor-intensive content strategies. The pipeline from idea to published video involves research, scripting, asset creation, thumbnail design, title and description optimization, and file organization. OpenClaw can automate most of this pipeline.</p>
+                <p>The full workflow looks like this:</p>
+                <ol>
+                    <li><strong>Idea research:</strong> A sub-agent monitors trending topics, competitor channels, and audience questions to generate video ideas with estimated potential</li>
+                    <li><strong>Script writing:</strong> A dedicated script writer sub-agent produces scripts in your voice, with hooks, story structure, and calls to action</li>
+                    <li><strong>B-roll generation:</strong> AI-generated visuals, stock footage lists, and screen recording scripts for each section of the video</li>
+                    <li><strong>Thumbnail generation:</strong> Multiple thumbnail concepts with text overlays, tested against best practices for click-through rate</li>
+                    <li><strong>Title and description optimization:</strong> SEO-optimized titles (multiple options), descriptions with timestamps and keywords, and tag sets</li>
+                    <li><strong>Asset organization:</strong> Everything organized in Google Drive with a clear folder structure, ready for editing</li>
+                    <li><strong>Approval flow:</strong> The main agent presents the complete package for your review before any publishing happens</li>
+                </ol>
+
+                <p class="code-label">YouTube Pipeline Setup Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Set up a YouTube content pipeline with the following stages:
+
+1. Idea research (sub-agent: monitor trends, competitors,
+   audience questions, generate ideas with potential scores)
+2. Script writing (sub-agent: write in my voice, include hooks,
+   stories, CTAs, formatted for teleprompter)
+3. Asset creation (thumbnails, b-roll lists, description text)
+4. Organization (Google Drive folder structure per video)
+5. Approval flow (present package for my review)
+
+Create the sub-agents, skills, and workflow.
+Track everything in a content calendar file.</code>
+                </div>
+
+                <p>The feedback loop is critical for YouTube. After each video publishes, the agent tracks performance (views, retention, click-through rate) and saves winning formulas as skills. The script that got 50% higher retention than average? Its structure becomes the default template. The thumbnail style that doubled click-through rate? That style guide gets locked into the skill. Over time, the pipeline produces increasingly effective content because it learns from real performance data.</p>
+
+                <h3>9.3 Business Operations</h3>
+                <p>For service businesses, OpenClaw becomes a tireless operations manager that handles the daily grind of lead management, client communication, and administrative tasks.</p>
+                <p><strong>Booking alerts with auto-research:</strong> The moment someone books a call, your agent researches the prospect and delivers a prep brief. Company background, LinkedIn profile, recent activity, likely pain points, and suggested talking points. You walk into every call prepared.</p>
+                <p><strong>Email management:</strong> Your agent scans Gmail continuously, categorizing messages by urgency and type. It drafts responses for routine emails (scheduling, information requests, follow-ups) and flags important messages that need your personal attention. You review and approve drafts rather than writing from scratch.</p>
+                <p><strong>CRM tracking:</strong> Every lead interaction is logged. Pipeline stages are updated automatically. Stale leads get flagged. Follow-up reminders fire on schedule. Nothing falls through the cracks. One consulting setup tracks 80+ leads in Notion with zero manual data entry.</p>
+                <p><strong>Proactive business updates:</strong> Two to four times per day, your agent messages you with relevant business updates. New lead came in. Client responded to a proposal. Invoice is overdue. Competitor launched a new feature. You stay informed without checking anything manually.</p>
+
+                <h3>9.4 Content Accountability and LinkedIn</h3>
+                <p>Consistency is the hardest part of content marketing. Most people know they should post regularly. Most people do not. OpenClaw's accountability mode (Chapter 7) combined with content automation solves this.</p>
+                <p>The agent checks in four times per day with escalating intensity. Morning: "Today's content plan is [X]. Ready?" Midday: "The LinkedIn post is drafted but not reviewed. Want to look at it now?" Afternoon: "You still have not posted. Is that a reason or an excuse?" End of day: "Posting streak: 0 days."</p>
+                <p>For LinkedIn specifically, the agent maintains a post bank: pre-written, pre-approved posts stored in Notion or a file, ready to publish at scheduled times. You batch-create posts when you are in a creative mood, and the agent handles scheduling and reminders for the rest of the month.</p>
+
+                <h3>9.5 Tools and Integrations</h3>
+                <p>The power of OpenClaw multiplies with every tool you connect. Here are the highest-impact integrations:</p>
+                <p><strong>Google Drive:</strong> File organization, content storage, client deliverable management, automated backups. The agent can create folder structures, organize assets by project, and maintain shared drives for team collaboration.</p>
+                <p><strong>Google Analytics (GA4):</strong> Daily traffic reports, anomaly detection (sudden drops or spikes), content performance tracking by page, and lead source attribution. The agent identifies which content produces results and which needs improvement.</p>
+                <p><strong>Google Search Console:</strong> Keyword rank tracking, new keyword discovery, click-through rate optimization, indexing health monitoring, and post-publish tracking to see how new content performs in search.</p>
+                <p>The hierarchy for connections is: <strong>API first, browser automation second, skill if available.</strong> APIs are fast, reliable, and efficient. Browser automation works when no API exists but is slower and more fragile. Community skills sometimes provide pre-built integrations for popular tools.</p>
+
+                <p class="code-label">Google Drive Setup Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Set up Google Drive integration. I want you to:
+1. Create a folder structure for my business:
+   - /Clients (subfolder per client)
+   - /Content (subfolder per platform)
+   - /Internal (meeting notes, reports, docs)
+   - /Assets (images, logos, templates)
+2. Create a skill for organizing new files automatically
+3. Set up a weekly backup of important documents
+4. Show me how to share specific folders with my team</code>
+                </div>
+
+                <h3>9.6 Industry Examples</h3>
+                <p><strong>Real Estate:</strong> OpenClaw automates transaction paperwork by reading intake data and auto-filling contract templates (TREC contracts, disclosure forms). It tracks every transaction from listing to close, monitors deadlines, and sends automated communications to all parties. One real estate brokerage uses it to handle deadline tracking, document preparation, and agent communication across dozens of simultaneous transactions.</p>
+                <p><strong>AI Consultancy:</strong> For consulting businesses, the agent handles Webflow SEO optimization, Google Ads campaign management, social media scheduling, and client reporting. It runs SEO audits on client sites, produces monthly performance reports, and manages content calendars across multiple client accounts.</p>
+                <p><strong>The Meatspace Layer:</strong> One of the most forward-thinking use cases involves AI agents hiring humans for physical tasks via APIs. Tasks that require a physical presence, like picking up documents, attending a meeting, verifying a property condition, or taking photos of a location, get dispatched to on-demand workers. The AI handles everything except the physical task itself. This is not science fiction. It is happening now, and it represents the future of how AI agents interact with the physical world.</p>
+
+                <h3>9.7 Meta Prompts for Any Business</h3>
+                <p>These prompts work regardless of your industry. They leverage the fact that your agent has deep context about your specific situation:</p>
+
+                <p class="code-label">Revenue Roadmap</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Design a 90-day plan to increase my revenue by 30%.
+
+Use everything you know about my business, my current
+marketing, my client base, and my tools.
+
+Include:
+- Quick wins (week 1-2)
+- Medium-term plays (week 3-6)
+- Strategic bets (week 7-12)
+- Specific actions for each item
+- How you can help execute each one</code>
+                </div>
+
+                <p class="code-label">Content Machine Design</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Design a content machine for my business.
+
+Cover every platform I should be on, the content types
+that work for my audience, a realistic publishing cadence,
+and how to repurpose content across platforms.
+
+Then set up the automation: content calendar, drafting
+pipeline, approval flow, scheduling, and performance tracking.
+
+Make it sustainable. I should spend 2 hours per week max
+on content once the system is running.</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CHAPTER 10 -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" id="ch10">
+        <div class="article-wrap">
+            <div class="reveal">
+                <p class="chapter-label">Chapter 10</p>
+                <h2>Security: Lock It Down</h2>
+
+                <h3>10.1 Why Security Matters</h3>
+                <p>This chapter is mandatory reading for every OpenClaw user regardless of skill level. The stakes are higher than most people realize.</p>
+                <p>Security researchers have found over 42,000 exposed OpenClaw instances using Shodan, with 93% having authentication bypass vulnerabilities. Cisco's threat intelligence team discovered malware embedded in 37 popular skills on the community hub. A fake VS Code extension was distributing a trojan targeting OpenClaw users. These are not theoretical risks. They are documented incidents.</p>
+                <p>Your OpenClaw agent is, functionally, a superuser with a natural language interface. It can execute any shell command, read and write any file, browse the web, send messages on your behalf, and interact with every connected service. If someone gains unauthorized access to your agent, they have access to everything your agent has access to. That includes your email, your files, your client data, your business communications, and your server.</p>
+                <p>Real incidents that have been documented include: agents dumping home directory contents via <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">find ~</code> in response to social engineering, prompt injection attacks in group chats that extracted private information, and malicious skills that exfiltrated data on installation.</p>
+                <p>Security is not optional. It is the foundation everything else is built on.</p>
+
+                <h3>10.2 The 12-Step Hardening Checklist</h3>
+                <p>Follow these steps in order. Each one addresses a specific attack vector.</p>
+
+                <h4>Step 1: Run the Security Audit</h4>
+                <p>OpenClaw has a built-in security audit command. Run it first to understand your current exposure.</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>openclaw security audit
+openclaw security audit --deep
+openclaw security audit --fix</code>
+                </div>
+
+                <h4>Step 2: Gateway Authentication Token</h4>
+                <p>The gateway is the entry point to your agent. Without authentication, anyone who finds your server can send messages to your agent. Generate a strong token and configure it.</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>openclaw doctor --generate-gateway-token</code>
+                </div>
+
+                <h4>Step 3: DM Pairing and Group Allowlists</h4>
+                <p>Configure who can message your agent. Set DM policy to "pairing" so only approved contacts can direct-message it. Enable <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">requireMention: true</code> for group chats so the agent only responds when explicitly mentioned, not to every message.</p>
+
+                <h4>Step 4: BotFather Lockdown</h4>
+                <p>If you are using Telegram, configure your bot through BotFather: disable the ability for others to add your bot to groups, and enable privacy mode so the bot only receives messages directed at it.</p>
+
+                <h4>Step 5: UFW Firewall</h4>
+                <p>Configure your server's firewall to deny all incoming connections except SSH. The gateway communicates outbound, so it does not need any incoming ports open.</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo ufw enable</code>
+                </div>
+
+                <h4>Step 6: File Permissions</h4>
+                <p>Lock down your configuration files and state directory. Configuration files should be readable only by the owner (600). The state directory should be accessible only by the owner (700).</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>chmod 600 /path/to/config.yaml
+chmod 700 /path/to/state/</code>
+                </div>
+
+                <h4>Step 7: Log Redaction</h4>
+                <p>Enable log redaction to prevent sensitive data from appearing in log files. Set <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">logging.redactSensitive: "tools"</code> in your configuration to redact tool outputs that may contain passwords, tokens, or personal data.</p>
+
+                <h4>Step 8: Sub-Agent Sandboxing</h4>
+                <p>Sub-agents should have the minimum permissions needed for their specific job. A content writer sub-agent does not need shell access. A research sub-agent does not need to send messages. Use <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">denyTools</code> configuration to restrict each sub-agent to only the tools it actually needs.</p>
+
+                <h4>Step 9: Tailscale (Private Network)</h4>
+                <p>Tailscale creates a private mesh network between your devices using WireGuard encryption. Once configured, you can bind your gateway to the Tailscale interface (or localhost) and close all public ports. Your server becomes invisible to the internet while remaining fully accessible to your authenticated devices.</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code># Install Tailscale on your VPS
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+
+# Verify connection
+tailscale status
+
+# After confirming Tailscale works, close public SSH
+sudo ufw delete allow 22/tcp</code>
+                </div>
+
+                <div class="callout callout-warning">
+                    <p><strong>Important:</strong> Before closing public SSH, always verify Tailscale SSH access works in a SEPARATE terminal session. Keep your original SSH session open as a safety net. If Tailscale SSH fails and you close public SSH, you will lock yourself out of your server.</p>
+                </div>
+
+                <h4>Step 10: Vet Skills Before Installing</h4>
+                <p>Read every SKILL.md file before installing any community skill. Look for shell commands, file access patterns, network calls, and anything that seems unnecessary for the skill's stated purpose. Use the Cisco Skill Scanner if available. A skill has the same access as your agent. Treat skill installation like installing software on your computer: verify the source and understand what it does.</p>
+
+                <h4>Step 11: Use Strong Models for Sensitive Tasks</h4>
+                <p>Opus-class models have demonstrably better resistance to prompt injection attacks. In any context where your agent processes input from untrusted sources (group chats, web scraping, email processing), use the strongest model available. Cheaper models are more susceptible to injection attacks that can manipulate the agent's behavior.</p>
+
+                <h4>Step 12: Review and Monitor</h4>
+                <p>Security is not a one-time setup. Review your configuration monthly. Check logs for unusual activity. Monitor which tools your agent uses and what files it accesses. Update your hardening as new threats emerge and as your setup evolves.</p>
+
+                <h3>10.3 Tailscale Setup (Step-by-Step)</h3>
+                <p>Tailscale deserves a detailed walkthrough because it is the single most impactful security improvement you can make. It is free for up to 100 devices.</p>
+                <ol>
+                    <li><strong>Sign up at tailscale.com</strong> and install on your local machine (the computer you use daily)</li>
+                    <li><strong>Install on your VPS:</strong> <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">curl -fsSL https://tailscale.com/install.sh | sh</code> then <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">sudo tailscale up</code></li>
+                    <li><strong>Test SSH through Tailscale IP:</strong> Open a NEW terminal and SSH to your server using its Tailscale IP (starts with 100.x.x.x). Keep your original SSH session open as a safety net.</li>
+                    <li><strong>Close all public ports:</strong> Once Tailscale SSH works, remove the public SSH rule: <code style="font-family:var(--mono);background:var(--bg-elevated);padding:0.15rem 0.4rem;font-size:0.9em;border:1px solid var(--border);">sudo ufw delete allow 22/tcp</code></li>
+                    <li><strong>Verify:</strong> Your server is now invisible to the internet. Only devices on your Tailscale network can reach it.</li>
+                </ol>
+                <p>Optionally enable Tailscale SSH for an even simpler experience. This lets you SSH to your server using Tailscale's authentication instead of SSH keys, and you can manage access from the Tailscale admin panel.</p>
+
+                <h3>10.4 Mac-Specific Security</h3>
+                <p>If you are running OpenClaw on a Mac Mini, there are additional platform-specific hardening steps:</p>
+                <ul>
+                    <li><strong>FileVault:</strong> Enable full disk encryption. This protects all data at rest if the physical machine is stolen.</li>
+                    <li><strong>macOS Firewall + Stealth Mode:</strong> Enable the built-in firewall and turn on stealth mode so the machine does not respond to network probes.</li>
+                    <li><strong>Disable auto login:</strong> Require a password on boot. If the machine restarts, unauthorized users cannot access it.</li>
+                    <li><strong>Disable sharing services:</strong> Turn off AirDrop, File Sharing, Screen Sharing, Remote Login, and any other sharing service you do not explicitly need.</li>
+                    <li><strong>Homebrew service binding audit:</strong> Check that services installed via Homebrew bind to 127.0.0.1 (localhost only), not 0.0.0.0 (all interfaces). A service bound to 0.0.0.0 is accessible from the network.</li>
+                    <li><strong>SIP status check:</strong> Verify System Integrity Protection is enabled. Never disable SIP for OpenClaw or any other reason. It protects critical system files from modification.</li>
+                </ul>
+
+                <h3>10.5 Golden Rules</h3>
+                <p>Three rules that should guide every security decision you make:</p>
+                <p><strong>Rule 1: Never let the agent verify its own security.</strong> If you ask your agent "are you secure?" it will check its own configuration and tell you everything looks fine. But the agent cannot see things like open ports on the server, misconfigured firewall rules, or network exposure. Always verify security from a separate terminal or machine. Run port scans from outside your network. Check firewall rules directly. Do not trust your agent to audit its own security perimeter.</p>
+                <p><strong>Rule 2: Always read SKILL.md yourself before installing any community skill.</strong> Do not let your agent install skills without your review. A malicious skill with shell access can exfiltrate every file on your server in seconds. Take two minutes to read the SKILL.md, understand what the skill does, and verify it only requests the permissions it needs.</p>
+                <p><strong>Rule 3: Least privilege, always.</strong> Every connection, every sub-agent, every skill should have the minimum permissions needed to do its job. If a sub-agent does not need shell access, deny it. If a skill does not need to write files, restrict it. The attack surface of your agent is the sum of every permission granted. Keep that surface as small as possible.</p>
+
+                <div class="callout">
+                    <p><strong>Secure Baseline Configuration:</strong> After completing all 12 steps, ask your agent to export a snapshot of the current security configuration. Save it as your baseline. When you make changes, you can always compare against this baseline to make sure you have not accidentally opened a vulnerability.</p>
+                </div>
+
+                <p class="code-label">Full Security Hardening Prompt</p>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <code>Run through the complete security hardening checklist:
+
+1. Run openclaw security audit --deep
+2. Generate and configure gateway auth token
+3. Configure DM pairing and group allowlists
+4. Lock down BotFather settings
+5. Configure UFW firewall (deny all incoming, allow SSH only)
+6. Set file permissions (config: 600, state: 700)
+7. Enable log redaction
+8. Configure sub-agent sandboxing (deny unnecessary tools)
+9. Install and configure Tailscale
+10. Audit all installed skills for suspicious behavior
+11. Verify model configuration for sensitive contexts
+12. Document current security state as baseline
+
+For each step, tell me what you did and what I need
+to verify manually from a separate terminal.</code>
+                </div>
+            </div>
+
+            <!-- CTA after Chapter 10 -->
+            <div class="guide-cta reveal">
+                <h3>Want expert security hardening?</h3>
+                <p>Get your OpenClaw locked down by someone who has done it hundreds of times. Security is not a place to learn by trial and error.</p>
+                <a href="https://cal.com/jess-mason/openclaw-consultation" class="btn">Book a Strategy Call <span class="arrow">&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!-- CLOSING -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <section class="chapter" style="padding-bottom:var(--space-xl);">
+        <div class="article-wrap">
+            <div class="reveal">
+                <h2>What Comes Next</h2>
+                <p>You have read the complete openclaw book. Ten chapters covering everything from architecture and setup to security hardening and multi-agent workflows. That is the knowledge. Now the question is implementation.</p>
+                <p>If you are just getting started, go back to Chapter 2 and follow the setup guide. Get your agent running, connect your first tools, and start with the onboarding interview. The first week is about building the relationship with your agent and understanding what it can do.</p>
+                <p>If you have been running OpenClaw for a while, go to Chapter 6 and run the audit prompt. Then set up heartbeats (Chapter 7) and your first sub-agent (Chapter 8). These are the features that transform an assistant into an autonomous team member.</p>
+                <p>If you have done all of that, go to Chapter 10 and run the security hardening checklist. Then come back to Chapter 9 and pick the use cases that match your business.</p>
+                <p>The agents that produce the best results are the ones whose owners invest time in planning, feedback, and optimization. Not the ones with the most expensive models or the most tools connected. The compounding effect of good feedback, clean context files, and well-designed skills makes every month better than the last.</p>
+                <p>Your AI agent gets better every single day. Make sure you do too.</p>
+                <p style="margin-top:2rem;"><strong>Next steps:</strong> Check out our <a href="/guide">step-by-step setup guide</a> for a quick-start walkthrough, or <a href="/">visit our homepage</a> to learn about our consulting services. Ready to get expert help? <a href="https://cal.com/jess-mason/openclaw-consultation">Book a strategy call</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-top" id="backTop" title="Back to top">&uarr;</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrap">
+            <p>&copy; 2025 Jess Stetson Mason / OpenClaw Consulting</p>
+            <p style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;">
+                <a href="https://www.openclawexperts.io/experts/setup/jess-stetson-mason" style="color:var(--accent);font-weight:600;">&#10003; Certified OpenClaw Expert</a>
+                <a href="https://novasoftai.com">NovaSoft AI</a>
+                <a href="https://openclawsetup.xyz">OpenClaw Setup</a>
+                <a href="/">OpenClaw Consulting</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Throttled scroll handler (single listener, RAF-based)
+        const nav = document.getElementById('nav');
+        const progressBar = document.getElementById('progress');
+        const backTop = document.getElementById('backTop');
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const scrollY = window.scrollY;
+                    const scrollPct = (scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+                    nav.classList.toggle('scrolled', scrollY > 50);
+                    progressBar.style.width = scrollPct + '%';
+                    backTop.classList.toggle('visible', scrollY > 800);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        reveals.forEach(el => observer.observe(el));
+
+        // Copy code button
+        function copyCode(btn) {
+            const code = btn.parentElement.querySelector('code');
+            navigator.clipboard.writeText(code.textContent).then(() => {
+                btn.textContent = 'Copied!';
+                setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+            });
+        }
+    </script>
+
+    <!-- Hot Prospect Tracker (same as main site) -->
+    <script>
+    (function() {
+      if (typeof window === 'undefined') return;
+      var ua = navigator.userAgent.toLowerCase();
+      if (['bot','crawler','spider','headless','lighthouse','pagespeed','prerender','phantom'].some(function(p){return ua.indexOf(p)!==-1})) return;
+
+      var CONFIG = {
+        minPages: 2, minScroll: 60, minTime: 15000, cooldown: 600000,
+        minSession: 8000, deepScroll: 80
+      };
+
+      function getSession() {
+        var s = sessionStorage.getItem('oc_prospect');
+        if (s) return JSON.parse(s);
+        var params = new URLSearchParams(window.location.search);
+        var utm = {};
+        ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(p) {
+          var v = params.get(p); if (v) utm[p] = v;
+        });
+        return {
+          pages: [], maxScroll: 0, entryTime: Date.now(), alertSent: false, lastAlert: 0,
+          referrer: document.referrer || 'direct', utm: utm, ctaClicks: 0,
+          sid: Date.now() + '-' + Math.random().toString(36).substr(2,9)
+        };
+      }
+      function save(d) { sessionStorage.setItem('oc_prospect', JSON.stringify(d)); }
+
+      function sendAlert(reason, data) {
+        var now = Date.now();
+        if ((now - data.entryTime) < CONFIG.minSession) return;
+        if (data.lastAlert && (now - data.lastAlert) < CONFIG.cooldown) return;
+
+        var payload = {
+          event: 'hot_prospect',
+          reason: reason,
+          page: '/openclaw-book',
+          data: {
+            pagesVisited: data.pages, maxScrollDepth: data.maxScroll,
+            timeOnSite: Math.round((now - data.entryTime) / 1000),
+            referrer: data.referrer, currentPage: window.location.pathname,
+            utmParams: data.utm, ctaClicks: data.ctaClicks, sessionId: data.sid
+          },
+          timestamp: new Date().toISOString(),
+          userAgent: navigator.userAgent
+        };
+
+        fetch('/api/track', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function() {
+          data.lastAlert = now; data.alertSent = true; save(data);
+        }).catch(function(){});
+      }
+
+      var data = getSession();
+      if (data.pages.indexOf('/openclaw-book') === -1) data.pages.push('/openclaw-book');
+
+      var maxScroll = data.maxScroll;
+      window.addEventListener('scroll', function() {
+        var scrollPct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (scrollPct > maxScroll) { maxScroll = scrollPct; data.maxScroll = maxScroll; save(data); }
+        if (scrollPct >= CONFIG.deepScroll) {
+          sendAlert('Deep scroll on guide (' + scrollPct + '%) - highly engaged reader', data);
+        }
+      });
+
+      document.querySelectorAll('a[href*="cal.com"], .btn').forEach(function(el) {
+        el.addEventListener('click', function() {
+          data.ctaClicks++;
+          save(data);
+          sendAlert('CTA clicked on guide: ' + (el.textContent || '').trim().substring(0,50), data);
+        });
+      });
+
+      setTimeout(function() {
+        if (data.maxScroll >= CONFIG.minScroll) {
+          sendAlert('Engaged guide reader: ' + data.maxScroll + '% scroll after 30s+', data);
+        }
+      }, 30000);
+
+      setTimeout(function() {
+        sendAlert('Long guide session (90s+) with ' + data.maxScroll + '% scroll', data);
+      }, 90000);
+
+      save(data);
+    })();
+    </script>
+
+<script>
+    function submitNewsletter(e, source) {
+        e.preventDefault();
+        var form = e.target;
+        var btn = form.querySelector('button');
+        var msg = form.parentElement.querySelector('[id^="newsletter-msg"]') || document.getElementById('newsletter-msg');
+        var email = form.querySelector('input[name="email"]').value;
+        btn.disabled = true;
+        btn.textContent = '...';
+        fetch('/api/newsletter', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email, source: source })
+        }).then(function(r) { return r.json(); }).then(function(data) {
+            if (data.success) {
+                msg.style.color = 'var(--accent)';
+                msg.textContent = data.message === 'already_subscribed' ? "You're already on the list! 🤙" : "You're in! Keep an eye on your inbox. 🎯";
+                form.querySelector('input[name="email"]').value = '';
+            } else {
+                msg.style.color = '#e57373';
+                msg.textContent = data.error || 'Something went wrong. Try again.';
+            }
+            msg.style.opacity = '1';
+            btn.disabled = false;
+            btn.textContent = "I'm in";
+        }).catch(function() {
+            msg.style.color = '#e57373';
+            msg.textContent = 'Network error. Try again.';
+            msg.style.opacity = '1';
+            btn.disabled = false;
+            btn.textContent = "I'm in";
+        });
+        return false;
+    }
+</script>
+
+</body>
+</html>
