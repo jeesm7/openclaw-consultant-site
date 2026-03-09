@@ -312,6 +312,42 @@
             color: var(--bg);
             border-color: var(--accent);
         }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .nav-links .nav-link {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links .nav-link:hover { color: var(--accent); }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 101;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--text);
+            transition: all 0.3s ease;
+        }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
         /* ── Hero ────────────────────────────────── */
         .hero {
@@ -798,19 +834,37 @@
 
         /* ── Responsive ──────────────────────────── */
         @media (max-width: 768px) {
+            /* Hamburger nav */
+            .hamburger { display: flex; }
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: var(--bg);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                z-index: 100;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links .nav-link { font-size: 1.2rem !important; }
+            .nav-links .nav-cta { font-size: 1rem !important; padding: 1rem 2rem !important; }
+            
             /* Typography scaling */
-            .label, nav a, .nav-link { font-size: 14px !important; }
-            .body-lg, p { font-size: 14px !important; }
+            .label { font-size: 14px !important; }
             
             /* Touch targets */
-            a, button, .btn { min-height: 44px; display: inline-flex; align-items: center; padding: 0.75rem 1rem !important; }
+            a, button, .btn { min-height: 44px; }
             
             /* Hero improvements */
-            .hero { padding: 3rem 1rem 2rem !important; }
-            .heading-xl { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 1.5rem; }
-            .hero-cta { margin-top: 1.5rem; margin-bottom: 2rem; }
+            .hero { padding: 3rem 1rem 2rem !important; min-height: auto !important; }
+            .heading-xl { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 1rem; }
             .hero-bio { flex-direction: column; align-items: center; gap: 1.2rem !important; text-align: center; }
-            .hero-bio img { width: 160px !important; height: 160px !important; }
+            .hero-bio img { width: 120px !important; height: 120px !important; }
             
             /* Grid layouts */
             .intro-grid { grid-template-columns: 1fr; gap: var(--space-md); }
@@ -831,8 +885,16 @@
     <nav id="nav">
         <div class="wrap">
             <a href="/" class="nav-logo"><img src="logo.png" alt="OpenClaw" width="32" height="32" loading="lazy" style="height:32px;width:32px;border-radius:6px;vertical-align:middle;margin-right:0.5rem;object-fit:cover;">Open<span>Claw</span></a>
-            <a href="/openclaw-book" class="nav-link" style="font-family:var(--sans);font-size:0.8rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.3s ease;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">The Book</a>
-            <a href="https://cal.com/jess-mason/openclaw-consultation" class="nav-cta">Book a call</a>
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/openclaw-book" class="nav-link">The Book</a>
+                <a href="/reviews" class="nav-link">Reviews</a>
+                <a href="https://youtube.com/@jessautomates" class="nav-link" target="_blank">YouTube</a>
+                <a href="https://cal.com/jess-mason/meeting" class="nav-cta">Book a call</a>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open');this.classList.toggle('active')" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -842,15 +904,14 @@
             <div class="hero-inner">
                 <p class="label">OpenClaw Consultant</p>
                 <h1 class="heading-xl">Your business deserves<br>an <em>intelligent</em> assistant</h1>
-                <a href="https://cal.com/jess-mason/meeting" class="hero-cta" style="display:inline-flex;align-items:center;gap:0.75rem;background:#22c55e;color:#000;padding:1rem 2rem;border-radius:8px;font-weight:600;text-decoration:none;margin:1.5rem 0 2rem 0;font-size:1rem;transition:background 0.3s ease;min-height:48px;" onmouseover="this.style.background='#16a34a'" onmouseout="this.style.background='#22c55e'">Book a Free Strategy Call →</a>
+                <a href="https://cal.com/jess-mason/meeting" class="btn" style="background:var(--accent);color:var(--bg);padding:1rem 2rem;font-size:1rem;font-weight:600;margin:1.5rem 0 2rem 0;border-radius:8px;">Book a Free Strategy Call <span class="arrow">→</span></a>
                 <div class="hero-bio" style="display:flex;align-items:center;gap:2rem;margin-bottom:1.5rem;">
                     <img src="jess.jpg" alt="Jess Stetson Mason" style="width:180px;height:180px;border-radius:16px;object-fit:cover;object-position:center top;border:2px solid var(--accent-mid);box-shadow:0 8px 24px rgba(0,0,0,0.3);flex-shrink:0;">
-                    <p class="hero-desc" style="margin:0;">I'm <strong>Jess Mason</strong>. You might know me from <a href="https://youtube.com/@jessautomates?si=KF3eS5fYY9bYq2vX" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-mid);">YouTube</a>, where I teach thousands of people how to set up, optimize, and actually use OpenClaw. I don't just make videos about it. I build these systems for businesses every day. AI employees that close deals, manage properties, and run operations while you sleep. I handle everything: discovery call, custom roadmap, full deployment, and training so you're never dependent on me.</p>
-                </div>
-                <div>
-                    <a href="https://cal.com/jess-mason/openclaw-consultation" class="btn">
-                        Book a Strategy Call <span class="arrow">→</span>
-                    </a>
+                    <div class="hero-desc" style="margin:0;">
+                        <p style="margin-bottom:1rem;">I'm <strong>Jess Mason</strong>. You might know me from <a href="https://youtube.com/@jessautomates?si=KF3eS5fYY9bYq2vX" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-mid);">YouTube</a>, where I teach thousands of people how to set up, optimize, and actually use OpenClaw.</p>
+                        <p style="margin-bottom:1rem;">I don't just make videos about it. I build these systems for businesses every day. AI employees that close deals, manage properties, and run operations while you sleep.</p>
+                        <p>I handle everything: discovery call, custom roadmap, full deployment, and training so you're never dependent on me.</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -693,6 +693,32 @@
             .compare-grid { grid-template-columns: 1fr; }
             footer .footer-wrap { flex-direction: column; gap: 0.5rem; text-align: center; }
         }
+        /* Chapter accordion - collapsed by default on mobile */
+        .chapter { display: none; }
+        .chapter.open { display: block; }
+        .chapter-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--text);
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .chapter-toggle:hover { border-color: var(--accent-mid); background: var(--bg-elevated); }
+        .chapter-toggle .ch-num { color: var(--accent); font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 1rem; }
+        .chapter-toggle .ch-arrow { color: var(--accent); transition: transform 0.3s ease; font-size: 1.2rem; }
+        .chapter-toggle.active .ch-arrow { transform: rotate(180deg); }
+        .chapter-toggle.active { border-color: var(--accent-mid); background: var(--bg-elevated); }
+
         @media (max-width: 480px) {
             body { font-size: 16px; }
             .article-wrap { padding: 0 1.25rem; }
@@ -700,7 +726,7 @@
             .code-block code { font-size: 0.78rem; }
             .guide-cta { padding: 1.5rem; }
             /* Mobile touch & text improvements */
-            a, button, .btn { min-height: 44px !important; display: inline-flex; align-items: center; padding: 0.75rem 1rem !important; }
+            a, button { min-height: 44px; }
             .guide-cta button, .guide-cta a { font-size: 16px !important; }
             .label, nav a, .nav-link { font-size: 14px !important; }
         }
@@ -2021,6 +2047,73 @@ to verify manually from a separate terminal.</code>
         });
         return false;
     }
+</script>
+
+<script>
+// Chapter accordion
+(function() {
+    var chapters = {
+        ch1: 'What Is OpenClaw',
+        ch2: 'Setting Up Your OpenClaw',
+        ch3: 'Skills: How Your Agent Gets Smarter',
+        ch4: 'How to Prompt: Think Before You Execute',
+        ch5: 'Planning: Most Work Is Done Before Building',
+        ch6: 'Optimization: Make It 10x Smarter',
+        ch7: 'Proactive AI: Your 24/7 Employee',
+        ch8: 'Sub-Agents: Build Your AI Team',
+        ch9: 'Real-World Use Cases',
+        ch10: 'Security: Lock It Down'
+    };
+    
+    Object.keys(chapters).forEach(function(id, i) {
+        var section = document.getElementById(id);
+        if (!section) return;
+        
+        var btn = document.createElement('div');
+        btn.className = 'chapter-toggle';
+        btn.setAttribute('role', 'button');
+        btn.setAttribute('tabindex', '0');
+        btn.innerHTML = '<span><span class="ch-num">Chapter ' + (i + 1) + '</span> ' + chapters[id] + '</span><span class="ch-arrow">▼</span>';
+        
+        var wrap = document.createElement('div');
+        wrap.className = 'article-wrap';
+        wrap.appendChild(btn);
+        
+        section.parentNode.insertBefore(wrap, section);
+        
+        btn.addEventListener('click', function() {
+            var isOpen = section.classList.contains('open');
+            // Close all
+            document.querySelectorAll('.chapter').forEach(function(ch) { ch.classList.remove('open'); });
+            document.querySelectorAll('.chapter-toggle').forEach(function(t) { t.classList.remove('active'); });
+            // Toggle this one
+            if (!isOpen) {
+                section.classList.add('open');
+                btn.classList.add('active');
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Handle direct hash links (from TOC)
+    function openFromHash() {
+        var hash = window.location.hash.replace('#', '');
+        if (hash && document.getElementById(hash)) {
+            document.querySelectorAll('.chapter').forEach(function(ch) { ch.classList.remove('open'); });
+            document.querySelectorAll('.chapter-toggle').forEach(function(t) { t.classList.remove('active'); });
+            var section = document.getElementById(hash);
+            section.classList.add('open');
+            // Find matching toggle
+            var toggles = document.querySelectorAll('.chapter-toggle');
+            var idx = parseInt(hash.replace('ch', '')) - 1;
+            if (toggles[idx]) toggles[idx].classList.add('active');
+            setTimeout(function() { section.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
+        }
+    }
+    
+    if (window.location.hash) openFromHash();
+    window.addEventListener('hashchange', openFromHash);
+})();
 </script>
 
 </body>
