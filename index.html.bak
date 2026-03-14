@@ -838,8 +838,8 @@
 
         /* ── Responsive ──────────────────────────── */
         @media (max-width: 768px) {
-            /* Hamburger nav — single consistent menu overlay */
-            .hamburger { display: flex; z-index: 201; }
+            /* Hamburger nav */
+            .hamburger { display: flex; }
             .nav-links {
                 display: none;
                 position: fixed;
@@ -852,7 +852,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 2rem;
-                z-index: 200;
+                z-index: 100;
             }
             .nav-links.open { display: flex; }
             .nav-links .nav-link { font-size: 1.2rem !important; }
@@ -864,18 +864,11 @@
             /* Touch targets */
             a, button, .btn { min-height: 44px; }
             
-            /* Hero — proper spacing below fixed nav */
-            .hero { padding: 6rem 1rem 2rem !important; min-height: auto !important; }
+            /* Hero improvements */
+            .hero { padding: 3rem 1rem 2rem !important; min-height: auto !important; }
             .heading-xl { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 1rem; }
-            .hero-bio { flex-direction: column; align-items: center; gap: 1.2rem !important; text-align: left; }
+            .hero-bio { flex-direction: column; align-items: center; gap: 1.2rem !important; text-align: center; }
             .hero-bio img { width: 120px !important; height: 120px !important; }
-            
-            /* Tighter section spacing on mobile */
-            .intro, .why, .services, .diy-section, .faq { padding: 3rem 0 !important; }
-            .process { padding: 3rem 0 !important; }
-            .cta-final { padding: 3rem 0 !important; }
-            .newsletter { padding: 3rem 0 !important; }
-            .why-header, .diy-header, .faq-header, .process-header { margin-bottom: 2rem !important; }
             
             /* Grid layouts */
             .intro-grid { grid-template-columns: 1fr; gap: var(--space-md); }

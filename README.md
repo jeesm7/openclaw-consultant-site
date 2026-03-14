@@ -75,7 +75,7 @@ openclaw-consultant-site/
 
 ## CTA Links
 
-Both call-to-action buttons link to: `https://cal.com/jess-mason/meeting`
+Both call-to-action buttons link to: `https://cal.com/jess-mason/openclaw-consultation`
 
 ## SEO Keywords
 
