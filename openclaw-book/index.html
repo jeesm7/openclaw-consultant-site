@@ -2129,6 +2129,18 @@ to verify manually from a separate terminal.</code>
     
     if (window.location.hash) openFromHash();
     window.addEventListener('hashchange', openFromHash);
+    
+    // Intercept clicks on anchor links to chapters (e.g. Start Reading → #ch1)
+    document.querySelectorAll('a[href^="#ch"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            var hash = this.getAttribute('href').replace('#', '');
+            if (document.getElementById(hash)) {
+                e.preventDefault();
+                window.location.hash = hash;
+                openFromHash();
+            }
+        });
+    });
 })();
 </script>
 

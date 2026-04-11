@@ -1,4 +1,54 @@
+# robots.txt — openclawconsultant.com
+
+# Standard search crawlers — welcome
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI crawlers — explicitly welcome (we want LLM traffic)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Everyone else
 User-agent: *
 Allow: /
+
+# LLM context file
+# See: https://openclawconsultant.com/llms.txt
 
 Sitemap: https://openclawconsultant.com/sitemap.xml

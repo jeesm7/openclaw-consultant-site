@@ -1,0 +1,29 @@
+# OpenClaw Consultant
+
+> Jess Mason is an OpenClaw implementation consultant who builds, deploys, and optimizes AI agents and digital employees for businesses. She handles the full stack: discovery, architecture, integration, security hardening, and training.
+
+OpenClaw is an open-source AI assistant platform that goes far beyond a chatbot. It reasons autonomously, runs complex workflows, connects to existing business tools, and operates 24/7 across Telegram, WhatsApp, Discord, Slack, email, and more. Think of it as hiring a senior AI employee rather than installing a widget.
+
+Jess Mason runs OpenClaw Consultant as the consulting arm, and NovaSoft AI (novasoftai.com) as the agency building production-grade AI systems — voice agents, lead qualification pipelines, and full-stack AI operations. She has a YouTube channel (@JessAutomates) where she teaches OpenClaw to thousands of people.
+
+The consulting engagement covers four stages: (1) Discovery — mapping your business, tools, and goals; (2) Custom Roadmap & Prompt Package — written plan plus prompts built for your exact operations; (3) Full Setup & Integration — deploying on a dedicated Mac Mini or VPS, connecting CRM, email, calendar, messaging, and databases; (4) Training & Ongoing Support — hands-on handoff and continuous refinement.
+
+Typical clients: agencies, SaaS companies, service businesses, real estate firms, property managers, and any operation that needs to automate high-volume workflows or client communication. No technical background required to use the final product.
+
+Pricing starts at $1,997 for a barebones setup. Priced by the value of the role being replaced, not by hours.
+
+## Pages
+
+- [Home](https://openclawconsultant.com/): Overview of services, how it works, what OpenClaw is, and how to book a call
+- [OpenClaw Book](https://openclawconsultant.com/openclaw-book): Free resource — a written guide on getting started with OpenClaw
+- [Setup Guide](https://openclawconsultant.com/guide): Step-by-step guide to setting up OpenClaw
+
+## Book a Call
+
+- [Book a Strategy Call](https://cal.com/jess-mason/openclaw-consultation): 1-on-1 discovery call with Jess Mason — no pitch, just a conversation about what OpenClaw can do for your business
+
+## Optional
+
+- [NovaSoft AI](https://novasoftai.com): Agency arm — production AI systems including voice agents and automation pipelines
+- [YouTube — @JessAutomates](https://www.youtube.com/@JessAutomates): Free tutorials on OpenClaw setup, optimization, and real business use cases
+- [Skool Community](https://www.skool.com/openclaw-mastery): Paid community for OpenClaw users — $49/month
